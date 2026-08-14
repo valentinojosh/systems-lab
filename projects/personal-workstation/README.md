@@ -72,7 +72,7 @@ The workstation provides a unified high-performance platform for gaming, develop
 - Reconcile the exact processor, Samsung NVMe, memory kit, and DeepCool cooler from the physical system.
 - Capture a fresh, reproducible baseline for CPU, GPU, storage, thermals, and representative gaming frame times.
 - Record benchmark tool versions, settings, ambient context where practical, and retained screenshots.
-- Review project-data backup coverage and introduce periodic restore sampling.
+- Review project-data backup coverage and extend periodic restore sampling to critical workstation projects.
 - Revalidate cooling and power behavior after future GPU or CPU changes.
 
 <!-- MEDIA TODO:

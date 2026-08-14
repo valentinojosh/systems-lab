@@ -52,7 +52,7 @@ Active capacity progressed from approximately 2 TB to 4 TB and then to the curre
 
 ### Backup and operations
 
-A 12 TB NAS-class drive is periodically used for cold/off-site backup and then disconnected from the active system. Jellyfin database/configuration state is backed up separately from the media files, recognizing that restoring the library and restoring users, metadata, and server configuration are different recovery tasks.
+A 12 TB NAS-class drive is periodically used for cold/off-site backup and then disconnected from the active system. It is periodically reconnected and tested, with stored data checked for readability. Jellyfin database/configuration state is backed up separately from the media files and has been successfully restored, demonstrating that library content and users, metadata, and server configuration are distinct recovery tasks.
 
 Maintenance is scheduled outside typical household viewing windows. The system is available for normal media use without requiring permanent public exposure or continuous operation.
 
@@ -77,7 +77,8 @@ RAID could improve availability during a disk failure, but it would not replace 
 ## Reliability and recovery
 
 - active media data and Jellyfin application state have distinct backups;
-- the cold/off-site disk is disconnected between backup operations;
+- Jellyfin database/configuration backups have been restored successfully;
+- the cold/off-site disk is disconnected between operations, periodically tested, and checked for data readability;
 - Robocopy is used for controlled large-scale copy and migration work;
 - viewing accounts do not carry server-administration privileges;
 - maintenance is timed around service use;
@@ -85,7 +86,7 @@ RAID could improve availability during a disk failure, but it would not replace 
 
 ## Validation
 
-Operational validation includes playback from household clients and the directly connected television, account-role checks, and confirmation that hardware transcoding is enabled. Storage migrations were followed by use of the preserved library on the replacement drive. The next evidence pass should capture a sanitized transcode session and perform a documented Jellyfin application-state restore test.
+Operational validation includes playback from household clients and the directly connected television, account-role checks, and confirmation that hardware transcoding is enabled. Storage migrations were followed by use of the preserved library on the replacement drive, and Jellyfin database/configuration backups have been restored successfully. The next evidence pass should capture a sanitized transcode session and retain a sanitized record of the established restore procedure.
 
 ## Results
 
@@ -94,7 +95,7 @@ The result is a practical self-hosted service that consolidates local streaming 
 ## Evolution
 
 - Formalize media and Jellyfin-state backup frequency, logging, and retention.
-- Perform a non-destructive restore rehearsal to a test location.
+- Formalize the existing backup and successful restore procedure with a repeatable checklist and sanitized evidence.
 - Confirm the installed Windows edition; if remote administration is valuable, evaluate Windows 11 Pro and LAN-restricted Remote Desktop with trusted-user access.
 - Keep the service LAN-restricted unless a future requirement justifies a separately secured remote-access design.
 - Add checksums or sampled verification to large migration and backup jobs where the added assurance is worth the run time.

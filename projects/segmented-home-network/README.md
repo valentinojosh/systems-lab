@@ -9,7 +9,7 @@ Replace a flat consumer network with an architecture that reduces unnecessary tr
 - low-latency gaming and development work;
 - dependable wired connectivity in a separate office;
 - local access to household services;
-- network-connected security cameras, smart plugs, and other IoT devices;
+- Wi-Fi security cameras, smart plugs, and other IoT devices;
 - simple operation without invasive traffic-history retention.
 
 ## Environment and requirements

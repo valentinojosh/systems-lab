@@ -1,15 +1,19 @@
 # Hardware Repair & Upgrades
 
-Hands-on repair and upgrade work across mobile devices, Mac hardware, laptops, and desktop PCs. The method combines controlled disassembly, part identification, compatibility planning, data protection, reassembly, and functional validation—not unsupported board-level claims.
+Hands-on repair and upgrade work across mobile devices, Mac hardware, laptops, and desktop PCs. The common discipline is controlled disassembly, correct part identification, compatibility planning, data protection, careful reassembly, and functional validation—not unsupported board-level repair claims.
 
 ## Repair workflow
 
-1. Confirm the symptom, device revision, installed components, and data risk.
-2. Decide whether the remedy is assembly replacement, migration, firmware/driver work, or specialist escalation.
-3. Preserve accessible data, verify part compatibility, and prepare model-appropriate tools.
-4. Disassemble methodically, tracking fasteners, routing, shields, and connector orientation.
-5. Inspect for related damage, install the replacement, and reassemble.
-6. Test the affected and adjacent functions under the device's normal workload.
+1. Confirm the reported symptom and reproduce it when safe.
+2. Identify the exact device, model/revision, installed components, and data risk.
+3. Determine whether the likely remedy is a replaceable assembly, storage migration, firmware/driver change, or specialist escalation.
+4. Back up or preserve accessible data before invasive work.
+5. Verify part compatibility and prepare model-appropriate tools, adhesives, and replacement materials.
+6. Disassemble methodically, tracking fasteners, cable routing, shields, and connector orientation.
+7. Inspect for related damage before installing the replacement.
+8. Reassemble carefully, restoring routing, shields, fasteners, and enclosure fit.
+9. Test the repaired subsystem and adjacent functions that may have been disturbed during disassembly.
+10. Validate charging/power, thermals, storage, networking, audio, cameras, display, input, sleep/restart, or workload behavior as relevant.
 
 ## Mobile-device repair
 
@@ -21,7 +25,7 @@ Experience spans multiple iPhone generations from approximately the iPhone 6 era
 - model-specific disassembly and reassembly;
 - post-repair checks for display/touch, cameras, charging, buttons, audio, and enclosure fit.
 
-This work accounts for fragile flex cables, adhesive sealing, battery handling, paired components, and model-specific calibration. A successful replacement is verified functionally rather than inferred from power-on.
+Modern mobile repair is sensitive to fragile flex cables, adhesive sealing, battery handling, paired components, and model-specific calibration behavior. Successful physical replacement is followed by subsystem and adjacent-function verification rather than assumed from power-on.
 
 ## 2015 MacBook Pro repair and platform extension
 
@@ -33,7 +37,7 @@ Work on a 2015 MacBook Pro included:
 - third-party SSD compatibility work;
 - Boot Camp dual-boot Windows/macOS operation before a dedicated Windows PC was available.
 
-The storage upgrade required Apple firmware and third-party SSD compatibility work. The detailed mechanism is withheld until reconciled with the exact Mac model, OS version, and storage hardware; the confirmed result is a successful compatibility-focused migration.
+The storage upgrade required attention to Apple platform firmware and third-party SSD compatibility. The detailed historical mechanism is withheld until it can be verified against the exact Mac model, OS version, and storage hardware; the confirmed work remains a successful storage upgrade and compatibility-focused migration.
 
 ## Laptop and desktop work
 
@@ -49,7 +53,7 @@ The storage upgrade required Apple firmware and third-party SSD compatibility wo
 
 ## Storage upgrades and migration
 
-For storage replacement, I distinguish:
+Storage replacement crosses hardware and data-recovery concerns. The process distinguishes:
 
 - a healthy source suitable for cloning;
 - an unstable source that should be imaged with recovery-focused tooling;
@@ -57,7 +61,7 @@ For storage replacement, I distinguish:
 - a capacity migration that must preserve a working data set;
 - a boot conflict that requires separating disks before repair.
 
-See [Storage Recovery & Cross-Platform Diagnostics](../projects/storage-recovery/README.md) for source preservation and [Windows Deployment & Provisioning](windows-deployment.md) for the current fresh-install preference.
+See [Storage Recovery & Cross-Platform Diagnostics](../projects/storage-recovery/README.md) for the source-preserving recovery model and [Windows Deployment & Provisioning](windows-deployment.md) for the current fresh-install preference.
 
 ## Validation by repair class
 

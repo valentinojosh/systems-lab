@@ -30,7 +30,7 @@ A spare-hardware platform repurposed into a dual-role Windows Jellyfin server an
 - Ryzen 5 5500, RTX 2060 Super, and 32 GB DDR4 right-sized for the combined role
 - 8 TB active library with NVIDIA hardware-accelerated transcoding
 - LAN-only service exposure and separation between administration and viewing accounts
-- Storage growth from 2 TB to 4 TB to 8 TB, backed by Robocopy migrations and a 12 TB cold/off-site backup process
+- Storage growth from 2 TB to 4 TB to 8 TB, backed by reviewed Robocopy operations, representative-file checks, tested cold/off-site media, and successful Jellyfin-state restoration
 
 ### [High-End 4K Racing Simulator System Integration](projects/racing-simulator-pc/README.md)
 
@@ -60,7 +60,7 @@ A repeatable Windows/macOS recovery practice centered on protecting unstable sou
 | [Windows Deployment & Provisioning](docs/windows-deployment.md) | Reproducible installation media, local-account setup, driver remediation, and post-install health validation |
 | [Technician Bench & Diagnostic Toolkit](docs/technician-toolkit.md) | Purpose-driven telemetry, load testing, storage health, driver cleanup, and OS repair workflows |
 | [Hardware Repair & Upgrades](docs/hardware-repair.md) | Mobile-device, MacBook, laptop, and desktop disassembly, component replacement, migration, and functional verification |
-| [Backup & Recovery Practices](docs/backup-and-recovery.md) | Cross-project data protection, application-state backup, cold/off-site copies, imaging, and recovery-path design |
+| [Backup & Recovery Practices](docs/backup-and-recovery.md) | Cross-project data protection, application-state backup and restoration, cold/off-site media validation, imaging, and recovery testing |
 | [Historical Projects](docs/historical-projects.md) | Administration and organic growth of a 100+ member remote-study community during COVID-era university instruction |
 
 ## Operating approach

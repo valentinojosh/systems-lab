@@ -17,18 +17,20 @@ flowchart LR
 
 ## 1. Requirements and data protection
 
-Before creating media, I confirm:
+Before creating media:
 
-- target hardware, Windows edition, firmware/storage-controller state, and offline driver needs;
-- whether BitLocker/device encryption affects access or migration;
-- applications, licenses, profiles, saves, and user data requiring preservation;
-- the required backup or recovery path before installation.
+- identify the target hardware and required Windows edition;
+- confirm whether BitLocker/device encryption or other access controls affect the data plan;
+- inventory applications, licenses, browser/profile state, game saves, and user data that require preservation;
+- create and verify the required backups;
+- obtain current network, chipset, storage, and graphics drivers when offline installation may require them;
+- record firmware mode and storage-controller settings that matter to installation.
 
 ## 2. Installation media
 
 Rufus is used to create bootable Windows 11 installation media from a trusted image. Rufus supports bootable USB creation from ISO images and provides Windows setup options that can support a local-account-oriented out-of-box experience.
 
-I prefer fresh, reproducible media for new builds instead of carrying one cloned Windows image across unrelated systems. Cloning remains useful for like-for-like migration or preservation, while a fresh install provides a clearer hardware and driver baseline.
+The current preference is fresh, reproducible media rather than carrying a generic cloned Windows image indefinitely between unrelated systems. Historical cloning remains relevant for like-for-like drive migration or preservation, but a fresh install provides a clearer hardware and driver baseline for new builds.
 
 ## 3. Installation and account setup
 
@@ -38,13 +40,14 @@ Disk selection receives deliberate attention when multiple drives are installed.
 
 ## 4. Firmware and driver reconciliation
 
-After first boot, I:
+After first boot:
 
-1. confirm that firmware and Windows recognize the expected components;
-2. apply manufacturer chipset, platform, and workload-appropriate graphics drivers;
-3. resolve unknown devices and verify Device Manager state;
-4. apply firmware updates when a documented fix, compatibility, or security benefit warrants them;
-5. enable supported memory profiles only after the stock baseline is stable.
+1. confirm firmware and Windows recognize the expected CPU, memory, storage, network, graphics, and peripheral devices;
+2. apply current chipset and platform drivers from the appropriate manufacturer;
+3. install graphics drivers appropriate to the workload;
+4. resolve unknown devices and verify Device Manager state;
+5. apply firmware updates when their documented fix, compatibility, or security value warrants the change;
+6. enable supported memory profiles or performance settings after the stock baseline is stable, then validate stability under the target workload.
 
 DDU is reserved for GPU swaps and graphics-driver problems that merit clean removal. It is not required for every routine driver update.
 
@@ -54,16 +57,24 @@ Unwanted default components and startup behavior are reviewed and reduced where 
 
 Script behavior must be inspected before making claims such as latency optimization, service optimization, privacy hardening, telemetry disablement, or QoS changes. A broad script label does not establish which registry values, packages, services, tasks, policies, or firewall rules it modifies.
 
-Provisioning favors reversible, documented changes and the smallest change set that satisfies the workload. A recovery path precedes high-impact changes; update, security, networking, and platform services stay enabled unless a tested requirement supports changing them. Functional validation is repeated afterward.
+Safer provisioning principles include:
+
+- prefer reversible, documented changes;
+- create a restore/recovery path before high-impact modifications;
+- avoid disabling update, security, networking, or platform services without a tested requirement;
+- apply the smallest change set that satisfies the workload;
+- rerun device, peripheral, and workload validation after provisioning.
 
 ## 6. Health and workload validation
 
-- Complete Windows Update, confirm activation without retaining keys, and review failures.
-- Check Device Manager, relevant events, storage health, and Windows Security state.
-- Use System File Checker, CHKDSK, or memory diagnostics only when results or symptoms indicate them.
-- Validate network, audio, display, sleep/restart, USB, and peripheral behavior.
-- Run controlled subsystem tests and the actual target workload.
-- Record a sanitized firmware, driver, thermal, and representative-performance baseline.
+- Complete Windows Update and review failures rather than repeatedly forcing installs.
+- Confirm activation without recording product keys.
+- Check Device Manager, event evidence relevant to symptoms, storage health, and Windows Security state.
+- Use System File Checker, CHKDSK, or memory diagnostics when indicated by deployment results or observed symptoms.
+- Validate network, audio, display, sleep, restart, USB, and peripheral behavior.
+- Run controlled CPU/GPU/storage tests appropriate to the system.
+- Test the actual target workload: household media playback, gaming, development, or simulator integration.
+- Record a sanitized baseline of firmware, drivers, memory configuration, thermals, and representative performance.
 
 ## Deployment applications
 
