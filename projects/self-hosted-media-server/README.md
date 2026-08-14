@@ -70,6 +70,10 @@ Remote Internet streaming is not a requirement, so the service remains local. Th
 
 Repurposing the Ryzen/RTX platform converted available hardware into a capable media system. Capacity was expanded incrementally as the library grew, separating genuine storage demand from unnecessary compute replacement.
 
+### Availability does not replace backup
+
+RAID could improve availability during a disk failure, but it would not replace an independent backup. Because short media-service downtime is acceptable, a single active library disk fits the current availability requirement; the disconnected cold/off-site copy is the more important protection against loss. RAID is not deployed in the documented configuration.
+
 ## Reliability and recovery
 
 - active media data and Jellyfin application state have distinct backups;

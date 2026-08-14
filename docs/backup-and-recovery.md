@@ -1,6 +1,6 @@
 # Backup & Recovery Practices
 
-Recoverability is part of system operation, not a task deferred until failure. Across the Systems Lab, that means separating active data from recovery copies, protecting application state as well as user files, preserving unstable sources before repair, and validating that a backup can produce a usable restore.
+Recoverability is designed into Systems Lab work by separating active data from recovery copies, protecting application state as well as files, preserving unstable sources before repair, and designing recovery paths that can be independently validated.
 
 ## Recovery model
 
@@ -10,11 +10,9 @@ flowchart LR
     Active --> App["Application state<br/>and configuration"]
     Local --> Cold["Disconnected cold /<br/>off-site copy"]
     App --> Cold
-    Cold --> Verify["Scheduled review /<br/>restore sampling"]
-    Verify --> Active
 ```
 
-The diagram describes the operating pattern across projects; it does not claim a fully automated enterprise backup platform or universal implementation of every copy for every data set.
+The diagram summarizes confirmed copy relationships across projects. It does not claim a fully automated platform, universal coverage, or an established periodic restore-test program.
 
 ## Confirmed practices
 
@@ -32,32 +30,29 @@ The exact off-site storage location and data inventory are intentionally private
 
 ## Backup design principles
 
-### Identify the recovery object
+### Protect the complete recovery object
 
-A usable service may depend on more than its large data files. Jellyfin recovery, for example, includes media plus database/configuration state. A Windows workstation may require user data, project files, application settings, license information, and a reproducible deployment path.
+A service may depend on more than large data files. Jellyfin recovery includes media plus database/configuration state; workstation recovery may require project files, settings, licenses, and a reproducible deployment path.
 
 ### Separate active failure domains
 
-A second disk inside the same computer improves convenience and can support working copies, but it shares power, malware, theft, user-error, and chassis risks. A disconnected copy and an off-site copy address different failure modes.
+A second disk in the same computer supports working copies but shares power, malware, theft, user-error, and chassis risks. Disconnected and off-site copies address different failure modes.
 
 ### Preserve history where deletion propagation matters
 
-Robocopy supports restartable copies, logging, and mirroring options. Destructive mirror/purge behavior requires care because an accidental source deletion can be repeated at the destination. Backup commands should match the retention objective instead of treating synchronization and backup as synonyms.
+Robocopy supports restartable copies, logging, and mirroring options. Mirror/purge behavior can propagate accidental source deletion, so each command must match the retention objective rather than treating synchronization and backup as synonyms.
 
-### Test restoration
+### Design for testable restoration
 
-A successful copy log is evidence of a transfer, not proof that the service or file set can be restored. Recovery assurance improves when representative files are opened, application state is restored in a test location, and the result is documented.
+A successful copy log proves a transfer, not a usable recovery. Historical image restores demonstrate the source-preserving recovery path; representative cold-copy restores and a non-destructive Jellyfin-state rehearsal remain improvements to formalize.
 
 ## Practical workflow
 
-1. Inventory the data/service and define the recovery objective.
-2. Identify active, local-secondary, disconnected, and off-site copies.
-3. Select a copy method that preserves required data and metadata without unintended deletion propagation.
-4. Log the operation and review errors or skipped data.
-5. Validate destination capacity, representative files, and application state.
-6. Disconnect and relocate cold media after the operation.
-7. Periodically sample a restore and record the outcome.
-8. Revisit scope after storage, application, or project-location changes.
+1. Define the files, service state, and recovery objective.
+2. Map active, secondary, disconnected, and off-site copies.
+3. Use a copy or imaging method that protects the source and preserves required data.
+4. Review logs, errors, destination capacity, and representative files.
+5. Disconnect cold media and revisit coverage when storage or project locations change.
 
 ## Incident recovery
 
@@ -70,7 +65,7 @@ When the source device itself is unstable, normal backup assumptions no longer a
 - Is expected capacity available on the destination?
 - Can representative documents, media, archives, and project files be opened?
 - Is application state included and version-compatible?
-- Can a test restore be performed without overwriting the active system?
+- Is there a safe way to test restoration without overwriting the active system?
 - Is the cold copy disconnected after completion?
 - Does the off-site copy avoid the same physical incident as the active system?
 - Are credentials, encryption recovery material, and product keys protected separately from public documentation?

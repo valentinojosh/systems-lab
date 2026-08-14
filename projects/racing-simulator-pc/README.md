@@ -13,6 +13,7 @@ Design and commission a visually cohesive all-white system that can anchor a ded
 - modern native power delivery for the flagship GPU tier;
 - clean internal presentation and reduced visible cabling;
 - substantial airflow and future liquid-cooling capacity;
+- an initial 55-inch 4K display with a path to a planned three-display configuration;
 - Windows 11 Pro deployment and post-build validation;
 - a staged path from initial commissioning to the client's final cooling decision.
 
@@ -23,6 +24,10 @@ Design and commission a visually cohesive all-white system that can anchor a ded
 The AMD Ryzen 7 9800X3D supplies eight Zen 5 cores, sixteen threads, and second-generation 3D V-Cache in a processor positioned by AMD for enthusiast gaming. That makes it a workload-aligned choice for a simulator-first system rather than a workstation specification selected by core count alone.
 
 The confirmed graphics requirement is RTX 5090 class. The exact board-partner SKU is withheld until it is reconciled against the physical card, packaging, or receipt.
+
+### Memory
+
+The confirmed kit is 32 GB (2 × 16 GB) of G.SKILL Trident Z5 Neo RGB DDR5-6000, SKU `F5-6000J2836G16GX2-TZ5NRW`. Its rated timings are CL28-36-36-96 at 1.40 V with an AMD EXPO profile. The white/silver-toned kit fits the build presentation; its rated profile remains subject to enablement and stability validation during commissioning.
 
 ### Rear-connector presentation
 
@@ -44,6 +49,10 @@ The planned front intake bank uses eight reverse-blade CORSAIR LX120-R fans so t
 
 A white Montech NX400 air cooler supports the initial commissioning phase. It is a deliberate temporary component that lets the system be assembled and validated while the client evaluates the final cooling architecture. A future matching AIO or full CPU-and-GPU custom loop remains a client decision, not a completed feature.
 
+### Simulator display integration
+
+The confirmed initial display is one Samsung Odyssey Ark 55-inch 2nd Gen: a 3840 × 2160 4K UHD, 165 Hz, 1000R curved display. The intended final layout uses three of these displays, but the triple-display configuration has not been installed or validated. Cockpit, wheel, pedals, display mounts, and other simulator peripherals also remain pending; the case study does not attribute their selection to this PC integration work.
+
 ## Implementation and commissioning
 
 The project is being delivered in stages:
@@ -53,7 +62,7 @@ The project is being delivered in stages:
 3. establish safe initial cooling with the NX400;
 4. install Windows 11 Pro from Rufus-created media;
 5. install current platform, graphics, and peripheral drivers;
-6. configure firmware and memory settings supported by the actual installed kit;
+6. enable the kit's AMD EXPO profile if appropriate and validate memory stability;
 7. validate stability, temperatures, and gaming behavior under controlled loads;
 8. integrate the PC with the client's racing-simulator environment;
 9. finalize the long-term cooling and fan configuration with the client.
@@ -79,22 +88,25 @@ The 9000D can accommodate extreme fan and radiator configurations, but the finis
 Final validation will record:
 
 - firmware revision, driver state, and recognized component inventory;
-- memory profile and stability checks appropriate to the installed kit;
+- memory profile, rated timings, and stability checks for the installed kit;
 - HWiNFO64 sensor data at idle and under sustained gaming/load conditions;
 - CPU and GPU temperatures, clock behavior, and power observations;
 - CPU and GPU benchmark runs used comparatively rather than as isolated marketing numbers;
-- frame-time and 4K performance evidence from the racing-simulator workload;
-- post-integration checks for controls, display behavior, audio, networking, and sleep/restart reliability.
+- frame-time and 4K behavior from the racing-simulator workload after it is installed;
+- initial single-display checks, followed by multi-display behavior only if the planned triple configuration is installed;
+- post-integration checks for any confirmed controls, audio, networking, and sleep/restart reliability.
 
 No benchmark or thermal result is published until retained evidence is available.
 
 ## Current result
 
-The confirmed architecture pairs a gaming-specialized AMD platform, RTX 5090-class graphics, native modern power delivery, high-performance NVMe storage, a reverse-connector white presentation, and a chassis with enough thermal flexibility to support the client's eventual cooling decision. The case study will be completed after final configuration, simulator integration, and evidence capture.
+The confirmed architecture pairs a gaming-specialized AMD platform, 32 GB DDR5-6000 CL28 memory, RTX 5090-class graphics, native modern power delivery, high-performance NVMe storage, a reverse-connector white presentation, and one 55-inch Odyssey Ark 2nd Gen display. The case study will be completed after final configuration, simulator integration, and evidence capture; the planned three-display layout is not yet an operational result.
 
 ## Evolution
 
-- Confirm the exact GPU, memory kit, display, and simulator hardware from physical evidence.
+- Confirm the exact GPU and simulator peripherals from physical evidence.
+- Validate the installed memory profile and initial Odyssey Ark configuration during commissioning.
+- Design and validate the three-display layout only after the additional displays and mounting system are installed.
 - Record the installed fan map and airflow direction after assembly.
 - Complete thermal and stability validation before selecting final cooling.
 - Evaluate a matching AIO against the cost, maintenance, acoustic, and presentation goals of a full custom CPU/GPU loop.
@@ -112,7 +124,7 @@ Recommended framing: system powered down or safely lit; exclude serial-number la
 
 <!-- MEDIA TODO:
 Add a wide photo of the PC integrated with the racing-simulator environment.
-Recommended framing: show the relationship between computer, display, and cockpit without implying responsibility for unselected peripherals or exposing client information.
+Recommended framing: show the relationship between computer, installed display configuration, and cockpit without implying responsibility for peripheral selection or exposing client information.
 -->
 
 <!-- MEDIA TODO:
@@ -129,12 +141,14 @@ Recommended framing: document actual routing, components, leak testing, and ther
 
 - AMD Ryzen 7 9800X3D
 - GIGABYTE B850 AORUS STEALTH ICE
+- G.SKILL Trident Z5 Neo RGB 32 GB (2 × 16 GB), DDR5-6000 CL28, `F5-6000J2836G16GX2-TZ5NRW`
 - RTX 5090-class premium white graphics card
 - Samsung 990 PRO 2 TB
 - Super Flower LEADEX VIII Platinum PRO 1200 W, white
 - CORSAIR 9000D RGB AIRFLOW, white
 - CORSAIR LX / LX-R fan ecosystem
 - Montech NX400 temporary commissioning cooler, white
+- Samsung Odyssey Ark 55-inch 2nd Gen (one confirmed initially; three-display layout planned)
 - Windows 11 Pro deployment target
 - Rufus installation media
 
@@ -142,7 +156,9 @@ Recommended framing: document actual routing, components, leak testing, and ther
 
 - [AMD Ryzen 7 9800X3D specifications](https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html)
 - [GIGABYTE B850 AORUS STEALTH ICE specifications](https://www.gigabyte.com/us/Motherboard/B850-AORUS-STEALTH-ICE-rev-10/sp)
+- [G.SKILL Trident Z5 Neo RGB DDR5 product family](https://www.gskill.com/products/7/165/390/Trident-Z5-Neo-RGB-DDR5-AMD-EXPO)
 - [Samsung 990 PRO 2 TB](https://www.samsung.com/us/memory-storage/nvme-ssd/990-pro-pcie-4-0-nvme-ssd-1tb-sku-mz-v9p2t0b-am/)
+- [Samsung Odyssey Ark 55-inch 2nd Gen specification sheet](https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/ls55cg970nnxgo/SPECSHEET_LS55CG970NNXGO_v2.pdf)
 - [Super Flower LEADEX VIII Platinum PRO](https://www.super-flower.com.tw/products-detail/LVIII-P-PRO/)
 - [CORSAIR 9000D specifications](https://www.corsair.com/us/en/p/pc-cases/cc-9011273-ww/9000d-rgb-airflow-super-full-tower-pc-case-cc-9011273-ww)
 - [CORSAIR 9000D fan and radiator compatibility](https://www.corsair.com/us/en/explorer/diy-builder/cases/9000d-fan-and-radiator-compatibility/)

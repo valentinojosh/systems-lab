@@ -37,7 +37,7 @@ I served as the sole administrator and moderator for the academic year. Responsi
 - maintaining a usable balance between academic and social areas;
 - moderating the community, with minimal incident burden.
 
-The community operated without a bot or formal analytics layer. Its value lies in requirements discovery, information organization, community administration, and sustained organic adoption.
+Its value lies in requirements discovery, information organization, community administration, and sustained organic adoption.
 
 ### Results
 
@@ -52,4 +52,4 @@ The community transformed an invitation made during remote classes into a 100+ m
 - sole-administrator ownership;
 - iterative service design based on observed demand.
 
-Historical screenshots are not recreated or required. The case is documented from retained facts without manufacturing visual evidence, bot usage, analytics, or governance systems that were not part of the project.
+Historical screenshots are not recreated or required. The case is documented from retained facts without manufacturing visual evidence, analytics, or governance systems that were not established as part of the project.

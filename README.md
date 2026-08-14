@@ -1,6 +1,6 @@
 # Systems Lab & Technical Projects
 
-Hands-on systems engineering across segmented networking, self-hosted infrastructure, high-performance system integration, storage recovery, Windows deployment, diagnostics, repair, and recoverability. This repository documents systems I have designed, built, configured, operated, repaired, recovered, validated, or improved—with the engineering decisions and operational evidence behind the result.
+Hands-on systems engineering across segmented networking, self-hosted infrastructure, high-performance system integration, storage recovery, Windows deployment, diagnostics, repair, and recoverability. This repository documents systems I have designed, built, configured, operated, repaired, recovered, validated, or improved—with the engineering decisions, validation methods, and supporting evidence behind the result.
 
 ## Engineering scope
 
@@ -19,7 +19,7 @@ Hands-on systems engineering across segmented networking, self-hosted infrastruc
 A home network evolved from a flat consumer topology into a policy-conscious environment that separates trusted endpoints from less-trusted IoT devices while preserving low latency, compatibility, and day-to-day reliability.
 
 - GL.iNet Flint 2 gateway with NETGEAR GS305E managed office distribution
-- Intentional isolation between trusted computing devices, household services, and IoT equipment
+- Intentional isolation of less-trusted IoT devices from trusted endpoints and household services
 - Conservative network-wide DNS filtering without invasive browsing-history retention
 - Evidence-based roadmap for validating segmentation, QoS, firewall policy, and congestion management
 
@@ -37,6 +37,7 @@ A spare-hardware platform repurposed into a dual-role Windows Jellyfin server an
 A flagship client gaming system engineered for a 4K racing-simulator environment and premium all-white presentation, with deliberate attention to compatibility, power delivery, cable presentation, thermal headroom, and staged commissioning.
 
 - Gaming-focused Ryzen 7 9800X3D and RTX 5090-class platform
+- Confirmed 32 GB DDR5-6000 CL28 memory kit and initial 55-inch Samsung Odyssey Ark 2nd Gen display, with a three-display layout planned
 - B850 AORUS STEALTH ICE rear-connector design inside a white CORSAIR 9000D
 - ATX 3.1 / PCIe 5.1 power delivery with a native 12V-2x6 connection
 - Temporary air-cooled commissioning phase while the client evaluates the final cooling architecture
@@ -59,7 +60,7 @@ A repeatable Windows/macOS recovery practice centered on protecting unstable sou
 | [Windows Deployment & Provisioning](docs/windows-deployment.md) | Reproducible installation media, local-account setup, driver remediation, and post-install health validation |
 | [Technician Bench & Diagnostic Toolkit](docs/technician-toolkit.md) | Purpose-driven telemetry, load testing, storage health, driver cleanup, and OS repair workflows |
 | [Hardware Repair & Upgrades](docs/hardware-repair.md) | Mobile-device, MacBook, laptop, and desktop disassembly, component replacement, migration, and functional verification |
-| [Backup & Recovery Practices](docs/backup-and-recovery.md) | Cross-project data protection, application-state backup, cold/off-site copies, imaging, and restoration validation |
+| [Backup & Recovery Practices](docs/backup-and-recovery.md) | Cross-project data protection, application-state backup, cold/off-site copies, imaging, and recovery-path design |
 | [Historical Projects](docs/historical-projects.md) | Administration and organic growth of a 100+ member remote-study community during COVID-era university instruction |
 
 ## Operating approach

@@ -9,7 +9,7 @@ Replace a flat consumer network with an architecture that reduces unnecessary tr
 - low-latency gaming and development work;
 - dependable wired connectivity in a separate office;
 - local access to household services;
-- Wi-Fi security cameras, smart plugs, and other IoT devices;
+- network-connected security cameras, smart plugs, and other IoT devices;
 - simple operation without invasive traffic-history retention.
 
 ## Environment and requirements
@@ -27,16 +27,17 @@ flowchart LR
     Internet["Internet"] --> Modem["Cable gateway<br/>modem role"]
     Modem --> Gateway["GL.iNet Flint 2<br/>routing, policy, DNS filtering"]
     Gateway --> Trusted["Trusted devices<br/>workstations, laptop, phones"]
-    Gateway --> Services["Household service<br/>Jellyfin host"]
-    Gateway --> Restricted["Restricted IoT<br/>cameras, smart plugs"]
+    Gateway --> Media["Local Jellyfin host"]
+    Gateway --> Restricted["Less-trusted IoT<br/>cameras, smart plugs"]
     Trusted --> OfficeRun["Structured office Ethernet run"]
     OfficeRun --> Switch["NETGEAR GS305E<br/>managed wired distribution"]
     Switch --> Workstation["Gaming / development workstation"]
     Switch --> Laptop["Wired laptop connection"]
-    Restricted -. "blocked from trusted devices<br/>and local media service" .-> Gateway
+    Restricted -. "access blocked" .-> Trusted
+    Restricted -. "access blocked" .-> Media
 ```
 
-The diagram shows logical trust boundaries, not live VLAN IDs, subnets, ports, or firewall rules.
+The diagram shows confirmed logical reachability, not separate physical or routed segments for every node. It does not assert a dedicated Services network, live VLAN IDs, subnets, ports, or a particular firewall mechanism.
 
 ## Implementation
 
@@ -78,7 +79,7 @@ Current validation is operational: trusted wired and wireless clients retain exp
 
 ## Results
 
-The network now provides managed wired office distribution and meaningful separation between trusted computing, local services, and less-trusted residential technology. The design favors low maintenance and predictable application behavior while preserving a clear path to stronger, explicitly documented policy enforcement.
+The network now provides managed wired office distribution and prevents less-trusted IoT devices from reaching trusted computing endpoints or the local Jellyfin service. The design favors low maintenance and predictable application behavior while preserving a clear path to stronger, explicitly documented policy enforcement.
 
 ## Evolution
 
@@ -90,7 +91,7 @@ High-value next steps are to:
 4. if justified, carry explicit 802.1Q tags across the office run and assign access ports by device role;
 5. minimize DNS-query retention while confirming that required applications continue to work;
 6. measure idle and loaded latency before deciding whether SQM should be enabled;
-7. validate allowed and denied flows from Trusted, Services, and IoT test clients.
+7. validate allowed and denied flows from trusted, service, and IoT test clients if a dedicated Services zone is introduced.
 
 <!-- MEDIA TODO:
 Add a sanitized architecture diagram after live configuration verification.

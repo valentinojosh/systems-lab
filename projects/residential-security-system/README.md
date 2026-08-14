@@ -1,15 +1,15 @@
 # Residential Security System Deployment
 
-A self-deployed residential surveillance system combining a video doorbell and two exterior cameras with location-appropriate power, Wi-Fi integration, local recording, detection-zone configuration, and alert tuning. The project focuses on useful event capture and maintainable operation without publishing details that could weaken household security.
+A self-deployed residential surveillance system combining a video doorbell and two exterior cameras with location-appropriate power, network integration, local recording, detection-zone configuration, and alert tuning. The project focuses on useful event capture and maintainable operation without publishing details that could weaken household security.
 
 ## Objective
 
-Provide practical exterior awareness with local event retention while minimizing irrelevant clips and notifications. The deployment needed to adapt to different mounting locations, available power, wireless connectivity, weather exposure, and the trust boundary created by Internet-connected cameras.
+Provide practical exterior awareness with local event retention while minimizing irrelevant clips and notifications. The deployment needed to adapt to different mounting locations, available power, network connectivity, weather exposure, and the trust boundary created by Internet-connected cameras.
 
 ## Environment and requirements
 
 - one video doorbell and two additional exterior cameras;
-- Wi-Fi connectivity at each installation location;
+- network connectivity at each installation location;
 - a mix of solar and wired power selected by site constraints;
 - local SD-card recording;
 - configurable motion/object detection and detection regions;
@@ -24,7 +24,7 @@ Each device was placed to serve a distinct exterior monitoring purpose. Power wa
 
 ### Network integration
 
-The cameras connect over Wi-Fi and are treated as less-trusted IoT endpoints. Their placement in the restricted side of the home network supports the broader goal that camera-class devices should not freely initiate communication with trusted workstations or the local media service.
+The cameras are network-connected and treated as less-trusted IoT endpoints. Their placement in the restricted side of the home network supports the broader goal that camera-class devices should not freely initiate communication with trusted workstations or the local media service. The exact physical and network transport remains to be confirmed from the installed devices.
 
 ### Local recording
 
@@ -59,7 +59,7 @@ Security devices can themselves expand a network's attack surface. Restricting t
 
 ## Validation
 
-The system was validated by triggering representative events, reviewing captured clips, and iterating on zones and sensitivity to reduce irrelevant recordings. Ongoing checks should confirm Wi-Fi stability, power/charging state, correct timestamps, available storage, event playback, and update status.
+The system was validated by triggering representative events, reviewing captured clips, and iterating on zones and sensitivity to reduce irrelevant recordings. Ongoing checks should confirm network stability, power/charging state, correct timestamps, available storage, event playback, and update status.
 
 ## Results
 
@@ -80,8 +80,8 @@ Recommended framing: close view of a single installed device with house numbers,
 
 ## Technologies
 
-- Wi-Fi video doorbell
-- Two Wi-Fi exterior cameras
+- Network-connected video doorbell
+- Two network-connected exterior cameras
 - Solar and wired power
 - Local SD-card recording
 - Motion/object detection

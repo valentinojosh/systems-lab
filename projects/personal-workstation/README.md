@@ -18,7 +18,7 @@ Build a responsive, upgradeable daily system that balances high-refresh gaming w
 | Cooling | DeepCool CPU cooling |
 | Chassis | SAMA case |
 | Primary storage | 1 TB Samsung NVMe SSD |
-| Secondary storage | 1 TB WD Blue SATA SSD |
+| Secondary storage | 1 TB WD Blue SATA drive |
 
 The exact Samsung SSD and DeepCool cooler models are deliberately omitted until the physical inventory is reconciled. Historical benchmark figures are also withheld until supporting captures are located or new tests are run.
 
@@ -72,7 +72,7 @@ The workstation provides a unified high-performance platform for gaming, develop
 - Reconcile the exact processor, Samsung NVMe, memory kit, and DeepCool cooler from the physical system.
 - Capture a fresh, reproducible baseline for CPU, GPU, storage, thermals, and representative gaming frame times.
 - Record benchmark tool versions, settings, ambient context where practical, and retained screenshots.
-- Review project-data backup coverage and perform periodic restore sampling.
+- Review project-data backup coverage and introduce periodic restore sampling.
 - Revalidate cooling and power behavior after future GPU or CPU changes.
 
 <!-- MEDIA TODO:
