@@ -20,7 +20,7 @@ Build a responsive, upgradeable daily system that balances high-refresh gaming w
 | Primary storage | 1 TB Samsung NVMe SSD |
 | Secondary storage | 1 TB WD Blue SATA drive |
 
-The exact Samsung SSD and DeepCool cooler models are deliberately omitted until the physical inventory is reconciled. Historical benchmark figures are also withheld until supporting captures are located or new tests are run.
+A physical inventory update is planned for the exact Samsung SSD and DeepCool cooler models, followed by fresh, reproducible benchmark capture.
 
 ## Workloads
 
@@ -49,9 +49,9 @@ The workstation supports mixed daily use rather than one synthetic workload. CPU
 
 The secondary disk improves workspace organization and provides convenient additional copies for selected projects, while a separate cold/off-site process addresses risks that affect the whole PC. This distinction avoids presenting a second internal disk as an off-host backup.
 
-### Evidence before numbers
+### Reproducible performance baselines
 
-Benchmarks are useful when the test version, settings, sensor context, and result capture are retained. The case study therefore avoids historical scores that cannot yet be tied to surviving evidence.
+Future benchmark baselines will retain the test version, settings, sensor context, and result capture so performance can be compared meaningfully over time.
 
 ## Validation approach
 

@@ -53,9 +53,9 @@ DDU is reserved for GPU swaps and graphics-driver problems that merit clean remo
 
 ## 5. Provisioning
 
-Unwanted default components and startup behavior are reviewed and reduced where practical for the system's use case. Third-party administration/debloat scripts may assist this work, but they remain upstream software and are not presented as authored here.
+Unwanted default components and startup behavior are reviewed and reduced where practical for the system's use case. Third-party administration or debloat scripts may assist this work and remain credited to their upstream authors.
 
-Script behavior must be inspected before making claims such as latency optimization, service optimization, privacy hardening, telemetry disablement, or QoS changes. A broad script label does not establish which registry values, packages, services, tasks, policies, or firewall rules it modifies.
+Script behavior must be inspected before attributing latency, service, privacy, telemetry, or QoS effects to it. A broad script label does not reveal which registry values, packages, services, tasks, policies, or firewall rules it modifies.
 
 Safer provisioning principles include:
 

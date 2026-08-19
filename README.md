@@ -38,8 +38,8 @@ A flagship client gaming system commissioned for a 4K racing-simulator environme
 
 - Operational Ryzen 7 9800X3D and AORUS GeForce RTX 5090 STEALTH ICE 32G platform
 - B850 AORUS STEALTH ICE rear-connector integration inside a white CORSAIR 9000D
-- Full 18-fan iCUE LINK deployment across two System Hubs, including case-lighting and front-I/O adapter integration
-- First-attempt POST followed by BIOS, EXPO, Windows 11 Pro, driver, control-topology, and stability commissioning
+- Full 18-fan iCUE LINK deployment across two System Hubs, with hub-controlled case/front-I/O lighting and separate FPANEL adapter integration
+- BIOS, EXPO, Windows 11 Pro, driver, iCUE LINK, and full-platform stability commissioning
 - Intentional air-cooled Phase 1 complete; custom water cooling and the planned three-display simulator remain future phases
 
 ### [Storage Recovery & Cross-Platform Diagnostics](projects/storage-recovery/README.md)
@@ -65,6 +65,6 @@ A repeatable Windows/macOS recovery practice centered on protecting unstable sou
 
 ## Operating approach
 
-The projects follow a consistent engineering loop: establish requirements, design within real constraints, implement deliberately, validate with appropriate evidence, document recovery paths, and evolve the system when measurements justify a change. Product capability is not presented as deployed functionality, third-party tools remain attributed to their authors, and sensitive operational details are intentionally sanitized.
+The projects follow a consistent engineering loop: establish requirements, design within real constraints, implement deliberately, validate with appropriate evidence, document recovery paths, and evolve the system when measurements justify a change. Implemented configurations are clearly separated from future capabilities, third-party tools remain attributed to their authors, and sensitive operational details are intentionally sanitized.
 
 This repository is a curated technical portfolio, not a software distribution or tutorial archive. Executables, private configurations, credentials, and raw infrastructure exports are intentionally excluded.

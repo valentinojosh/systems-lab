@@ -58,7 +58,7 @@ Storage work begins with correct device identity and source protection. SMART/he
 
 ### Windows integrity and suspicious behavior
 
-CHKDSK, System File Checker, memory diagnostics, and event evidence are selected according to symptoms. Suspicious behavior triage uses Windows Security scans, Malwarebytes as a second-opinion scanner when appropriate, and manual inspection of processes, scheduled tasks, startup entries, and relevant files. These tools are not run as an undifferentiated checklist: each changes time, load, or in some cases disk state, so the expected diagnostic value must justify it. This is practical endpoint triage, not malware-analysis, incident-response, or reverse-engineering specialization.
+CHKDSK, System File Checker, memory diagnostics, and event evidence are selected according to symptoms. Suspicious behavior triage uses Windows Security scans, Malwarebytes as a second-opinion scanner when appropriate, and manual inspection of processes, scheduled tasks, startup entries, and relevant files. These tools are selected for a specific diagnostic purpose because each changes time, load, or in some cases disk state. The scope is practical endpoint triage; malware analysis, incident response, and reverse engineering remain specialist escalation paths.
 
 ## Evidence standards
 
@@ -68,7 +68,7 @@ CHKDSK, System File Checker, memory diagnostics, and event evidence are selected
 - Distinguish a screening test from an exhaustive validation.
 - Sanitize usernames, serial numbers, file paths, network identifiers, and client information.
 - Attribute third-party utilities and scripts to their maintainers.
-- Do not treat a downloaded administration toolkit as authored work.
+- Credit downloaded administration toolkits to their upstream authors.
 
 ## Maintenance
 

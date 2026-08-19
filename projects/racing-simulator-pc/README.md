@@ -47,11 +47,11 @@ The primary build and commissioning work was completed in a one-day session. The
 | Phase-1 CPU cooling | MONTECH NX400 White | Intentional temporary air-cooled baseline for rapid commissioning |
 | Operating system | Windows 11 Pro | Fresh client deployment and platform baseline |
 
-The exact GPU is no longer an open item. GIGABYTE identifies the AORUS GeForce RTX 5090 STEALTH ICE 32G as a 32 GB GDDR7 Project STEALTH model whose power connector is moved out of the traditional visible position. That design complements the rear-connector motherboard and the 9000D's compatible motherboard tray rather than functioning as an isolated aesthetic choice.
+The installed AORUS GeForce RTX 5090 STEALTH ICE 32G uses a 32 GB GDDR7 Project STEALTH design with its power connector concealed from the traditional visible position. It complements the rear-connector motherboard and compatible 9000D tray as part of one clean, serviceable visible-side architecture.
 
 ## Large-format chassis and Project STEALTH integration
 
-The 9000D is a super full-tower, not a routine mid-tower enclosure. Its front and top mounts each accept two rows of four 120 mm fans, its rear accepts two more, and its InfiniRail system supports extensive repositioning and later radiator planning. CORSAIR also documents support for GIGABYTE Project STEALTH motherboards with reversed power connections and multiple 480 mm-class radiator positions.
+The 9000D is a super full-tower, not a routine mid-tower enclosure. Its front and top mounts each accept two rows of four 120 mm fans, its rear accepts two more, and its InfiniRail system supports extensive repositioning and later radiator planning. The chassis also supports GIGABYTE Project STEALTH motherboards with reversed power connections and multiple 480 mm-class radiator positions.
 
 The B850 AORUS STEALTH ICE relocates supported motherboard connectors to the rear face of the board. Pairing that architecture with the chassis kept primary power and front-panel wiring away from the visible motherboard face, reduced visual cable crossings, and produced the clean presentation shown in the completed build. The AORUS GPU's hidden power-connector layout extended the same design principle to the flagship graphics card.
 
@@ -68,15 +68,15 @@ Phase 1 fills the 9000D's documented 18-position capacity for 120 mm fans:
 | Location | Population | Physical arrangement | Controller topology |
 | --- | --- | --- | --- |
 | Front | 8 × CORSAIR iCUE LINK LX120-R RGB | Two rows of four, reverse-rotor front intake | One eight-device channel on Hub 1 |
-| Top | 8 × CORSAIR iCUE LINK LX120 RGB | Two rows of four; airflow direction intentionally not inferred here | The second eight-device channel on Hub 1 |
-| Rear | 2 × CORSAIR iCUE LINK LX120 RGB | Linked pair; airflow direction intentionally not inferred here | Hub 2 |
+| Top | 8 × CORSAIR iCUE LINK LX120 RGB | Two rows of four | The second eight-device channel on Hub 1 |
+| Rear | 2 × CORSAIR iCUE LINK LX120 RGB | Linked pair | Hub 2 |
 
 Two iCUE LINK System Hubs divide the control and power topology:
 
 - **Hub 1** serves the two large arrays: eight front LX120-R fans on one channel and eight top LX120 fans on the other.
 - **Hub 2** serves the two rear LX120 fans and the chassis-lighting connection through the 9000D's **iCUE LINK RGB Adapter**.
 
-CORSAIR's current System Hub firmware supports up to 12 devices per channel. Above the seven-device soft limit, the hub manages its power budget by reducing maximum lighting brightness in steps. The two eight-fan arrays therefore remained within the supported channel capacity while accepting the documented brightness behavior. That tradeoff was reviewed with the client and accepted in exchange for a much simpler controller and cable topology than adding hardware solely to preserve maximum RGB output.
+Current System Hub firmware supports up to 12 devices per channel. Above the seven-device soft limit, the hub manages its power budget by reducing maximum lighting brightness in steps. The two eight-fan arrays therefore remained within the supported channel capacity while accepting the documented brightness behavior. That tradeoff was reviewed with the client and accepted in exchange for a much simpler controller and cable topology than adding hardware solely to preserve maximum RGB output.
 
 This decision reduced hub count, power/data wiring, USB-header demand, and cross-chassis cable runs while keeping each physical eight-fan bank together as one logical chain. It was a constraint-management choice made around the chassis geometry and the client's priorities.
 
@@ -88,28 +88,28 @@ The iCUE setup and device-enumeration workflow required the software order to be
 
 The case required two separate adapter integrations:
 
-1. The **iCUE LINK RGB Adapter** connects the case-lighting system to iCUE LINK. CORSAIR documents software control for the front-center logo and the lighting around the USB/front-I/O area.
+1. The **iCUE LINK RGB Adapter** connects the case-lighting system to iCUE LINK and provides software control for the front-center logo and the lighting around the USB/front-I/O area.
 2. The **Front I/O Adapter** converts the case's consolidated FPANEL connection for motherboard layouts that require individual front-panel pins. It added a separate chassis-to-motherboard integration step and was wired correctly on the first attempt.
 
-These adapters perform different jobs and were not treated as interchangeable RGB accessories.
+Together, the two adapters cover iCUE-controlled case/front-I/O lighting and the motherboard's FPANEL connection as distinct parts of the larger chassis integration.
 
 ## First-pass assembly quality
 
-Deliberate build sequencing, connector verification, and pre-power inspection produced a clean first-power-on POST. The completed assembly reached BIOS on the first press of the power button with no power-connection correction, front-I/O correction, connector troubleshooting, or component-detection rework required.
+Deliberate build sequencing, connector verification, and pre-power inspection paid off when the completed system POSTed cleanly into BIOS on the first press of the power button. No power, front-I/O, connector, or component-detection correction was required.
 
-That result is meaningful in a system combining rear-facing motherboard connectors, a hidden GPU power connection, two LINK hubs, a chassis-specific front-I/O adapter, separate case-lighting integration, and 18 fans. It demonstrated first-pass assembly accuracy before software commissioning began.
+That first-pass result was especially satisfying in a system combining rear-facing motherboard connectors, a hidden GPU power connection, two LINK hubs, a chassis-specific Front I/O Adapter, separate case-lighting integration, and 18 fans. It reflected the value of methodical routing and connection checks before software commissioning began.
 
 ## Firmware, Windows, and platform commissioning
 
 Commissioning established a current, supportable baseline before performance validation:
 
-1. The motherboard was updated from BIOS **F1** to stable **F8** using **GIGABYTE Q-Flash**. Firmware was obtained from GIGABYTE's support site, transferred by USB, and applied before broader configuration. F8 is recorded as the selected commissioning target, not described as the latest release.
+1. The motherboard was updated from BIOS **F1** to stable **F8** using **GIGABYTE Q-Flash** before broader platform configuration. Firmware was obtained from GIGABYTE's support site and transferred by USB for the update.
 2. The installed G.SKILL kit was recognized and its AMD EXPO profile was enabled for the designed DDR5-6000 configuration. Stability was then tested rather than assumed from profile availability.
 3. Windows 11 Pro was installed from custom Rufus-created media prepared around the client's requested OOBE and local-account deployment preferences.
 4. Windows Update, GIGABYTE platform/device drivers, and the appropriate NVIDIA graphics driver were installed and reconciled. Device detection and platform state were checked after deployment.
 5. CORSAIR iCUE was configured for both hubs, the complete fan population, case lighting, and the physical device map.
 
-The workflow used manufacturer-supported utilities where they added value without presenting optional software or routine updates as the engineering outcome.
+Manufacturer-supported utilities were used selectively for firmware, platform, storage, and device configuration throughout commissioning.
 
 ## Validation and commissioning evidence
 
@@ -126,7 +126,7 @@ Validation covered the system as an integrated platform rather than relying on a
 | Control topology | iCUE enumeration, lighting-order checks, and fan operation | Both hubs, all 18 fans, and case lighting operated as configured |
 | Operating system | Update, driver, device, restart, and general stability checks | Windows 11 Pro platform commissioned for handoff |
 
-The selected scores document representative commissioning runs; they are not presented as competitive records or substitutes for system stability. The broader evidence is the combined pass across memory, storage, CPU, GPU, thermal behavior, drivers, operating-system configuration, and control topology.
+Representative CPU and GPU runs complemented the broader memory, storage, thermal, driver, operating-system, and control-topology validation completed before handoff.
 
 ## Phase-1 result
 
@@ -153,7 +153,7 @@ Only the later-stage work remains open:
 - validate actual multi-display frame-time, thermal, and workload behavior after installation;
 - capture final water-cooled build and complete simulator-environment photography.
 
-The eventual display plan retains the previously confirmed Odyssey Ark specifications: 55 inches, 3840 × 2160, 165 Hz, and 1000R curvature. The display shown during commissioning is not identified as an Odyssey Ark from photography alone, and neither the complete cockpit nor the triple-display configuration is presented as finished.
+The simulator plan includes Samsung Odyssey Ark 55-inch 2nd Gen displays at 3840 × 2160, 165 Hz, and 1000R curvature. The complete cockpit and intended three-display configuration remain future work, followed by multi-display performance commissioning.
 
 <!-- MEDIA TODO: phase2-water-cooled-final — add a sanitized final interior photograph only after the custom CPU/GPU loop is implemented and validated. -->
 

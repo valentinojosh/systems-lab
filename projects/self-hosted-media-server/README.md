@@ -82,7 +82,7 @@ RAID could improve availability during a disk failure, but it would not replace 
 - Robocopy is used for controlled large-scale copy and migration work;
 - viewing accounts do not carry server-administration privileges;
 - maintenance is timed around service use;
-- local Jellyfin reachability was preserved while AirVPN's Eddie client routed unrelated host traffic, without asserting an unverified routing mechanism.
+- local Jellyfin reachability was preserved while AirVPN's Eddie client routed unrelated host traffic.
 
 ## Validation
 

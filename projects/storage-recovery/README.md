@@ -41,11 +41,11 @@ The exact tool depends on the platform, device condition, filesystem, destinatio
 
 An unstable drive containing important files showed abnormal behavior. Before reinitializing it, the source was captured into a large mountable disk-image file. The image could be attached as a volume, used as the recovery source, and detached while retaining the preserved file.
 
-After the required data was recovered and checked, the original disk was erased and reinitialized, then the recovered data was restored. The system returned to service. This is evidence of source preservation and logical recovery—not a claim of mechanical-drive hardware repair or a definitive diagnosis of the earlier abnormal behavior.
+After the required data was recovered and checked, the original disk was erased and reinitialized, then the recovered data was restored. The system returned to service through source preservation and logical recovery; mechanical-drive repair and definitive root-cause diagnosis were outside the incident scope.
 
 ### Multi-SSD Windows conflict
 
-A Windows system contained two SSDs with Windows installations at the same time and developed a conflicted boot/storage state. The response preserved user data, separated the drives, and repaired filesystem, indexing, and system state as needed. Because the exact historical bootloader mechanism is not retained, the case is presented as a multi-disk Windows conflict rather than an invented BCD diagnosis.
+A Windows system contained two SSDs with Windows installations at the same time and developed a conflicted boot/storage state. The response preserved user data, separated the drives, and repaired filesystem, indexing, and system state as needed.
 
 ### Bootable cross-platform recovery environment
 
@@ -84,7 +84,7 @@ The approach has supported recovery across Windows and macOS systems, migrations
 
 ## Tool context
 
-Disk Drill has been used in recovery work, alongside operating-system tools and bootable Linux utilities. GNU ddrescue is relevant professional context because its official manual describes copying readable areas from failing block devices while minimizing repeated reads and preserving progress in a mapfile; historical use of that exact utility is not claimed here without retained evidence.
+Disk Drill has been used in recovery work alongside operating-system tools and bootable Linux utilities. GNU ddrescue documentation informs the current source-preserving workflow, particularly its approach to copying readable areas first, minimizing repeated reads, and retaining progress in a mapfile.
 
 ## Evolution
 

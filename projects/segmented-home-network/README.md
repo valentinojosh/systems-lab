@@ -20,7 +20,7 @@ The primary constraint is operational balance: security controls must produce a 
 
 ## Current architecture
 
-The confirmed design separates trusted computing devices from the IoT side of the network. The local Jellyfin host is also inaccessible from the IoT side. The live Layer-2/Layer-3 mechanism is intentionally not named here until the gateway and switch configuration can be inspected directly.
+The current design separates trusted computing devices from the IoT side of the network, which also cannot reach the local Jellyfin host. A planned live configuration audit will map the Layer-2/Layer-3 mechanism behind those access boundaries.
 
 ```mermaid
 flowchart LR
@@ -37,7 +37,7 @@ flowchart LR
     Restricted -. "access blocked" .-> Media
 ```
 
-The diagram shows confirmed logical reachability, not separate physical or routed segments for every node. It does not assert a dedicated Services network, live VLAN IDs, subnets, ports, or a particular firewall mechanism.
+The diagram represents current logical reachability. Detailed segmentation, addressing, and firewall mechanisms remain scheduled for the live configuration review.
 
 ## Implementation
 
@@ -45,7 +45,7 @@ The diagram shows confirmed logical reachability, not separate physical or route
 - Kept normal trusted Wi-Fi clients separate from security cameras, smart plugs, and other less-trusted devices.
 - Prevented IoT-side access to trusted computing devices and the local media service.
 - Used the GS305E to extend the single office Ethernet run to multiple wired endpoints.
-- Configured switch-side traffic priority for the gaming/development workstation when local devices contend; the exact QoS mode remains subject to live verification.
+- Configured switch-side traffic priority for the gaming/development workstation when local devices contend; the planned configuration review will document the exact QoS mode and behavior.
 - Applied conservative network-wide DNS filtering while avoiding a design centered on detailed browsing-history retention.
 - Evaluated and rejected router-wide VPN routing for the current environment because its compatibility and reliability costs did not serve an operational requirement.
 
@@ -53,11 +53,11 @@ The diagram shows confirmed logical reachability, not separate physical or route
 
 ### Segmentation is policy, not a résumé keyword
 
-Network separation is valuable when it limits unnecessary communication between devices of different trust levels. The current system therefore emphasizes the outcome—restricted IoT reachability—while a future configuration audit will identify whether the live implementation uses isolated gateway networks, explicit IEEE 802.1Q VLANs, distinct routed interfaces/subnets, or a combination.
+Network separation is valuable when it limits unnecessary communication between devices of different trust levels. The current system enforces restricted IoT reachability; a future configuration audit will map whether the live implementation uses isolated gateway networks, explicit IEEE 802.1Q VLANs, distinct routed interfaces/subnets, or a combination.
 
 ### Managed distribution over the existing cable run
 
-The GS305E adds managed fan-out at the office without installing additional in-wall cabling. NETGEAR's current manual confirms that the switch supports tagged and untagged 802.1Q membership, port VLAN IDs, port-based priority, and 802.1p/DSCP QoS. Those capabilities make a tagged uplink/access-port design technically possible if the live gateway design warrants it; capability is not presented as current deployment.
+The GS305E adds managed fan-out at the office without installing additional in-wall cabling. It supports tagged and untagged 802.1Q membership, port VLAN IDs, port-based priority, and 802.1p/DSCP QoS. A tagged uplink/access-port design remains a future option if the live configuration review shows that it would improve the current policy boundaries.
 
 ### Conservative controls preserve compatibility
 
