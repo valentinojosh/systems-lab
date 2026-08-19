@@ -94,8 +94,7 @@ The result is a practical self-hosted service that consolidates local streaming 
 
 ## Evolution
 
-- Formalize media and Jellyfin-state backup frequency, logging, and retention.
-- Formalize the existing backup and successful restore procedure with a repeatable checklist and sanitized evidence.
+- Formalize media and Jellyfin-state backup cadence, logging, retention, and the existing restore procedure in a repeatable checklist.
 - Confirm the installed Windows edition; if remote administration is valuable, evaluate Windows 11 Pro and LAN-restricted Remote Desktop with trusted-user access.
 - Keep the service LAN-restricted unless a future requirement justifies a separately secured remote-access design.
 - Add checksums or sampled verification to large migration and backup jobs where the added assurance is worth the run time.

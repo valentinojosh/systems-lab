@@ -11,13 +11,13 @@ Build a responsive, upgradeable daily system that balances high-refresh gaming w
 | Component | Current configuration |
 | --- | --- |
 | Operating system | Windows 11 Pro |
-| Processor platform | 12-core AMD Ryzen 9 9900X-class |
+| CPU | AMD Ryzen 9 9900X |
 | Motherboard | MSI MAG X670E Tomahawk |
-| Memory | 32 GB DDR5 |
+| Memory | G.SKILL Flare X 32 GB |
 | Graphics | NVIDIA GeForce RTX 3070 |
-| Cooling | DeepCool CPU cooling |
+| CPU cooler | DeepCool AK620 DIGITAL |
 | Chassis | SAMA case |
-| Primary storage | 1 TB Samsung NVMe SSD |
+| Primary storage | Samsung 990 PRO 1 TB NVMe SSD |
 | Secondary storage | 1 TB WD Blue SATA drive |
 
 ## Workloads
@@ -31,7 +31,7 @@ Build a responsive, upgradeable daily system that balances high-refresh gaming w
 
 ## Architecture and implementation
 
-The AM5/X670E platform provides an upgradeable base around a high-core-count Ryzen 9 processor and DDR5 memory. The RTX 3070 supports the system's gaming and GPU-accelerated desktop workloads, while the Samsung NVMe device carries the operating system and latency-sensitive applications.
+The AM5/X670E platform provides an upgradeable base around an AMD Ryzen 9 9900X processor and G.SKILL Flare X 32 GB memory. The RTX 3070 supports the system's gaming and GPU-accelerated desktop workloads, while the Samsung 990 PRO NVMe SSD carries the operating system and latency-sensitive applications.
 
 Secondary WD Blue SATA storage separates active recordings, editing material, and working copies from the primary volume. Separate cold/off-site backup protects selected data beyond the disks installed in the workstation; the secondary internal disk is treated as accessible working storage, not as the entire recovery strategy.
 
@@ -67,14 +67,13 @@ The workstation provides a unified high-performance platform for gaming, develop
 
 ## Evolution
 
-- Reconcile the exact processor, Samsung NVMe, memory kit, and DeepCool cooler from the physical system.
 - Capture a fresh, reproducible baseline for CPU, GPU, storage, thermals, and representative gaming frame times.
 - Record benchmark tool versions, settings, ambient context where practical, and retained screenshots.
 - Review project-data backup coverage and extend periodic restore sampling to critical workstation projects.
 - Revalidate cooling and power behavior after future GPU or CPU changes.
 
 <!-- MEDIA TODO:
-Add a clean system photo and one reproducible telemetry/benchmark capture after component reconciliation.
+Add a clean system photo and one reproducible telemetry/benchmark capture.
 Recommended framing: neutral background and readable test context; remove usernames, device serial numbers, local paths, and unrelated applications.
 -->
 

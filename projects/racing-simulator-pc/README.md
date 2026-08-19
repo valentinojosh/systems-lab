@@ -40,7 +40,7 @@ The primary build and commissioning work was completed in a one-day session. The
 | CPU | AMD Ryzen 7 9800X3D | Gaming-focused eight-core AM5 platform for the 4K simulator workload |
 | Motherboard | GIGABYTE B850 AORUS STEALTH ICE | Project STEALTH rear-connector architecture and AM5 platform integration |
 | GPU | AORUS GeForce RTX 5090 STEALTH ICE 32G | Flagship 32 GB white GPU with a hidden power-connector design |
-| Memory | G.SKILL Trident Z5 Neo RGB 32 GB (2 × 16 GB), DDR5-6000, CL28-36-36-96, 1.40 V, AMD EXPO, `F5-6000J2836G16GX2-TZ5NRW` | Confirmed low-latency memory configuration with the intended EXPO profile enabled and validated |
+| Memory | G.SKILL Trident Z5 Neo RGB 32 GB (2 × 16 GB), DDR5-6000, CL28-36-36-96, 1.40 V, AMD EXPO, `F5-6000J2836G16GX2-TZ5NRW` | Low-latency memory configuration with the intended EXPO profile enabled and validated |
 | Storage | Samsung 990 PRO 2 TB NVMe SSD | Primary Windows, application, and game storage |
 | Power | Super Flower LEADEX VIII Platinum PRO 1200W White | ATX 3.1 / PCIe 5.1 platform with native 12V-2x6 delivery and capacity for later cooling hardware |
 | Chassis | CORSAIR 9000D RGB AIRFLOW, white | Super full-tower platform for rear-connector integration, 18-fan deployment, and future custom-loop capacity |

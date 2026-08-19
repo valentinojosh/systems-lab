@@ -51,7 +51,7 @@ The diagram represents current logical reachability.
 
 ## Engineering decisions
 
-### Segmentation is policy, not a résumé keyword
+### Segmentation policy
 
 Network separation is valuable when it limits unnecessary communication between devices of different trust levels. The current system enforces restricted IoT reachability between the device groups that matter operationally.
 
