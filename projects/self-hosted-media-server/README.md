@@ -82,11 +82,11 @@ RAID could improve availability during a disk failure, but it would not replace 
 - Robocopy is used for controlled large-scale copy and migration work;
 - viewing accounts do not carry server-administration privileges;
 - maintenance is timed around service use;
-- local Jellyfin reachability was preserved while AirVPN's Eddie client routed unrelated host traffic, without asserting an unverified routing mechanism.
+- local Jellyfin reachability was preserved while AirVPN's Eddie client routed unrelated host traffic.
 
 ## Validation
 
-Operational validation includes playback from household clients and the directly connected television, account-role checks, and confirmation that hardware transcoding is enabled. Storage migrations were followed by use of the preserved library on the replacement drive, and Jellyfin database/configuration backups have been restored successfully. The next evidence pass should capture a sanitized transcode session and retain a sanitized record of the established restore procedure.
+Operational validation includes playback from household clients and the directly connected television, account-role checks, and confirmation that hardware transcoding is enabled. Storage migrations were followed by use of the preserved library on the replacement drive, and Jellyfin database/configuration backups have been restored successfully.
 
 ## Results
 
@@ -94,8 +94,7 @@ The result is a practical self-hosted service that consolidates local streaming 
 
 ## Evolution
 
-- Formalize media and Jellyfin-state backup frequency, logging, and retention.
-- Formalize the existing backup and successful restore procedure with a repeatable checklist and sanitized evidence.
+- Formalize media and Jellyfin-state backup cadence, logging, retention, and the existing restore procedure in a repeatable checklist.
 - Confirm the installed Windows edition; if remote administration is valuable, evaluate Windows 11 Pro and LAN-restricted Remote Desktop with trusted-user access.
 - Keep the service LAN-restricted unless a future requirement justifies a separately secured remote-access design.
 - Add checksums or sampled verification to large migration and backup jobs where the added assurance is worth the run time.

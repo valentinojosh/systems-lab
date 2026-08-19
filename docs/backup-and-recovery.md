@@ -16,7 +16,7 @@ flowchart LR
     Restore --> Ready
 ```
 
-The diagram describes confirmed practices across projects, including periodic checks of cold/off-site media and successful restoration of application state. It does not claim a fully automated enterprise platform or universal implementation of every copy for every data set.
+The diagram brings together practices used across projects, including periodic checks of cold/off-site media and successful restoration of application state. Automation and copy count are matched to each system's recovery requirements.
 
 ## Confirmed practices
 
@@ -48,7 +48,7 @@ Robocopy supports restartable copies, logging, and mirroring options. Destructiv
 
 ### Validate copies and test restoration
 
-A successful copy log is evidence of transfer, not proof that every file or service is recoverable. Representative copied files are opened after backup operations, the cold/off-site disk is periodically reconnected and checked, Jellyfin database/configuration backups have been restored successfully, and historical disk-image recovery has produced usable restores. These checks establish restoration as a current practice even though cadence and evidence retention can be made more formal.
+A successful copy log is evidence of transfer, not proof that every file or service is recoverable. Representative copied files are opened after backup operations, the cold/off-site disk is periodically reconnected and checked, Jellyfin database/configuration backups have been restored successfully, and historical disk-image recovery has produced usable restores. These checks are part of the current recovery practice, with an opportunity to formalize cadence and recordkeeping further.
 
 ## Practical workflow
 
@@ -87,7 +87,7 @@ When the source device itself is unstable, normal backup assumptions no longer a
 
 ## Scope boundaries
 
-These are practical personal and household recovery controls. They are not presented as immutable storage, continuous replication, enterprise disaster recovery, or automated 3-2-1 compliance.
+The current scope is practical personal and household recovery. Immutable storage, continuous replication, enterprise disaster recovery, and automated 3-2-1 enforcement sit outside that scope.
 
 ## Selected references
 

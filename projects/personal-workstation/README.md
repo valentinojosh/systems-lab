@@ -8,19 +8,17 @@ Build a responsive, upgradeable daily system that balances high-refresh gaming w
 
 ## Platform
 
-| Component | Current public specification |
+| Component | Current configuration |
 | --- | --- |
 | Operating system | Windows 11 Pro |
-| Processor platform | 12-core AMD Ryzen 9 9900X-class |
+| CPU | AMD Ryzen 9 9900X |
 | Motherboard | MSI MAG X670E Tomahawk |
-| Memory | 32 GB DDR5 |
+| Memory | G.SKILL Flare X 32 GB |
 | Graphics | NVIDIA GeForce RTX 3070 |
-| Cooling | DeepCool CPU cooling |
+| CPU cooler | DeepCool AK620 DIGITAL |
 | Chassis | SAMA case |
-| Primary storage | 1 TB Samsung NVMe SSD |
+| Primary storage | Samsung 990 PRO 1 TB NVMe SSD |
 | Secondary storage | 1 TB WD Blue SATA drive |
-
-The exact Samsung SSD and DeepCool cooler models are deliberately omitted until the physical inventory is reconciled. Historical benchmark figures are also withheld until supporting captures are located or new tests are run.
 
 ## Workloads
 
@@ -33,7 +31,7 @@ The exact Samsung SSD and DeepCool cooler models are deliberately omitted until 
 
 ## Architecture and implementation
 
-The AM5/X670E platform provides an upgradeable base around a high-core-count Ryzen 9 processor and DDR5 memory. The RTX 3070 supports the system's gaming and GPU-accelerated desktop workloads, while the Samsung NVMe device carries the operating system and latency-sensitive applications.
+The AM5/X670E platform provides an upgradeable base around an AMD Ryzen 9 9900X processor and G.SKILL Flare X 32 GB memory. The RTX 3070 supports the system's gaming and GPU-accelerated desktop workloads, while the Samsung 990 PRO NVMe SSD carries the operating system and latency-sensitive applications.
 
 Secondary WD Blue SATA storage separates active recordings, editing material, and working copies from the primary volume. Separate cold/off-site backup protects selected data beyond the disks installed in the workstation; the secondary internal disk is treated as accessible working storage, not as the entire recovery strategy.
 
@@ -49,9 +47,9 @@ The workstation supports mixed daily use rather than one synthetic workload. CPU
 
 The secondary disk improves workspace organization and provides convenient additional copies for selected projects, while a separate cold/off-site process addresses risks that affect the whole PC. This distinction avoids presenting a second internal disk as an off-host backup.
 
-### Evidence before numbers
+### Reproducible performance baselines
 
-Benchmarks are useful when the test version, settings, sensor context, and result capture are retained. The case study therefore avoids historical scores that cannot yet be tied to surviving evidence.
+Future benchmark baselines will retain the test version, settings, sensor context, and result capture so performance can be compared meaningfully over time.
 
 ## Validation approach
 
@@ -69,14 +67,13 @@ The workstation provides a unified high-performance platform for gaming, develop
 
 ## Evolution
 
-- Reconcile the exact processor, Samsung NVMe, memory kit, and DeepCool cooler from the physical system.
 - Capture a fresh, reproducible baseline for CPU, GPU, storage, thermals, and representative gaming frame times.
 - Record benchmark tool versions, settings, ambient context where practical, and retained screenshots.
 - Review project-data backup coverage and extend periodic restore sampling to critical workstation projects.
 - Revalidate cooling and power behavior after future GPU or CPU changes.
 
 <!-- MEDIA TODO:
-Add a clean system photo and one reproducible telemetry/benchmark capture after component reconciliation.
+Add a clean system photo and one reproducible telemetry/benchmark capture.
 Recommended framing: neutral background and readable test context; remove usernames, device serial numbers, local paths, and unrelated applications.
 -->
 

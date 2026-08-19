@@ -1,6 +1,6 @@
 # Hardware Repair & Upgrades
 
-Hands-on repair and upgrade work across mobile devices, Mac hardware, laptops, and desktop PCs. The common discipline is controlled disassembly, correct part identification, compatibility planning, data protection, careful reassembly, and functional validation—not unsupported board-level repair claims.
+Hands-on repair and upgrade work across mobile devices, Mac hardware, laptops, and desktop PCs. The work centers on controlled disassembly, correct part identification, compatibility planning, data protection, careful reassembly, and functional validation at the component and assembly level.
 
 ## Repair workflow
 
@@ -37,7 +37,7 @@ Work on a 2015 MacBook Pro included:
 - third-party SSD compatibility work;
 - Boot Camp dual-boot Windows/macOS operation before a dedicated Windows PC was available.
 
-The storage upgrade required attention to Apple platform firmware and third-party SSD compatibility. The detailed historical mechanism is withheld until it can be verified against the exact Mac model, OS version, and storage hardware; the confirmed work remains a successful storage upgrade and compatibility-focused migration.
+The storage upgrade required attention to Apple platform firmware and third-party SSD compatibility and concluded with a successful compatibility-focused migration.
 
 ## Laptop and desktop work
 
@@ -77,7 +77,7 @@ See [Storage Recovery & Cross-Platform Diagnostics](../projects/storage-recovery
 
 ## Scope boundaries
 
-This portfolio documents component and assembly-level repair, upgrades, configuration, migration, and validation. It does not claim microsoldering, board-level electronics repair, mechanical-drive hardware repair, Apple-certified service, or authorship of third-party tools.
+This portfolio covers component and assembly-level repair, upgrades, configuration, migration, and validation. Microsoldering, board-level electronics work, mechanical-drive hardware repair, and Apple-certified service sit outside its scope; third-party tools remain credited to their authors.
 
 ## Evolution
 
@@ -85,4 +85,4 @@ This portfolio documents component and assembly-level repair, upgrades, configur
 - Record part source, compatibility evidence, and pre/post condition without retaining client identifiers.
 - Add battery and storage health evidence when the platform exposes reliable metrics.
 - Define clear escalation criteria for swollen batteries, liquid damage, board faults, physically failing disks, and irreplaceable data.
-- Capture new repair evidence prospectively rather than recreating unavailable historical photos.
+- Capture privacy-safe pre/post condition and validation evidence for future repairs.

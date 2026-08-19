@@ -1,165 +1,181 @@
 # High-End 4K Racing Simulator System Integration
 
-A flagship client system engineered for a premium 4K racing-simulator environment and top-tier general gaming. The project treats the computer as a complete integration problem: workload fit, component compatibility, native high-power GPU delivery, reverse-connector cable presentation, thermal headroom, coordinated white aesthetics, staged commissioning, and final evidence capture.
+A flagship client PC built and commissioned for high-end 4K gaming and the first stage of a dedicated racing-simulator environment. The work combined a Ryzen 7 9800X3D and AORUS GeForce RTX 5090 STEALTH ICE 32G with a rear-connector Project STEALTH platform, a fully populated 18-fan CORSAIR iCUE LINK layout, Windows 11 Pro deployment, and systematic post-build validation.
 
-## Objective
+Phase 1 is complete and the system was handed over in a fully operational state. Custom water cooling, the complete simulator environment, and the planned multi-display expansion remain separate future work.
 
-Design and commission a visually cohesive all-white system that can anchor a dedicated racing-simulator setup while delivering flagship-class gaming performance. The client also wanted room to decide between a future matching liquid cooler and a full CPU/GPU custom loop without delaying initial use of the system.
+![Completed white CORSAIR 9000D interior with the AORUS RTX 5090 and full fan installation](assets/phase1-finished-interior.jpeg)
 
-## Requirements
+*Completed Phase-1 interior: the white 9000D, rear-connector platform, AORUS RTX 5090, temporary air cooler, and full 18-fan installation in operation.*
 
-- gaming-first CPU performance for a 4K simulator workload;
-- RTX 5090-class graphics capability in a premium white build;
-- modern native power delivery for the flagship GPU tier;
-- clean internal presentation and reduced visible cabling;
-- substantial airflow and future liquid-cooling capacity;
-- an initial 55-inch 4K display with a path to a planned three-display configuration;
-- Windows 11 Pro deployment and post-build validation;
-- a staged path from initial commissioning to the client's final cooling decision.
+## Project status
 
-## Architecture and component strategy
+| Stage | Status | Outcome |
+| --- | --- | --- |
+| Phase 1 — rapid air-cooled commissioning | **Complete** | Physical assembly, firmware and platform configuration, Windows 11 Pro deployment, iCUE LINK integration, validation, and operational client handoff |
+| Future phase — custom cooling and simulator expansion | **Planned** | Custom CPU/GPU loop, continued simulator integration, eventual three-display deployment, and validation of the final configuration |
 
-### Gaming-focused compute platform
+The staged approach gave the client a usable system quickly while separating baseline commissioning from the additional variables introduced by a custom loop. It also validated the expensive core hardware before water-block installation and established a known-good reference point for later modifications.
 
-The AMD Ryzen 7 9800X3D supplies eight Zen 5 cores, sixteen threads, and second-generation 3D V-Cache in a processor positioned by AMD for enthusiast gaming. That makes it a workload-aligned choice for a simulator-first system rather than a workstation specification selected by core count alone.
+## Client requirements and constraints
 
-The confirmed graphics requirement is RTX 5090 class. The exact board-partner SKU is withheld until it is reconciled against the physical card, packaging, or receipt.
+- flagship-class 4K and simulator-oriented gaming performance;
+- a coordinated white presentation with minimal visible cabling;
+- rapid Phase-1 availability rather than delaying use for custom-loop design;
+- extensive controllable fan and lighting integration;
+- platform capacity for later custom CPU/GPU cooling;
+- a path from one large 4K display to a planned three-display simulator configuration;
+- professional firmware, operating-system, driver, and stability commissioning.
 
-### Memory
+The primary build and commissioning work was completed in a one-day session. The client received a functioning Phase-1 system rather than a partially assembled platform awaiting the final cooling phase.
 
-The confirmed kit is 32 GB (2 × 16 GB) of G.SKILL Trident Z5 Neo RGB DDR5-6000, SKU `F5-6000J2836G16GX2-TZ5NRW`. Its rated timings are CL28-36-36-96 at 1.40 V with an AMD EXPO profile. The white/silver-toned kit fits the build presentation; its rated profile remains subject to enablement and stability validation during commissioning.
+![Opened white 9000D with the motherboard installed and Phase-1 components staged nearby](assets/phase1-initial-assembly.jpeg)
 
-### Rear-connector presentation
+*Phase-1 initial assembly: the Ryzen 7 9800X3D and B850 AORUS STEALTH ICE platform were already installed while the remaining core components were staged for integration.*
 
-The B850 AORUS STEALTH ICE provides an AM5, Ryzen 9000-compatible white motherboard platform. Its STEALTH rear-connector layout moves supported power and front-panel connections behind the motherboard tray, improving the presentation and cable-management strategy. CORSAIR explicitly lists the 9000D as compatible with GIGABYTE Project Stealth reverse-connection motherboards.
+## Phase-1 architecture
 
-### Storage
+| Subsystem | Implemented configuration | Engineering role |
+| --- | --- | --- |
+| CPU | AMD Ryzen 7 9800X3D | Gaming-focused eight-core AM5 platform for the 4K simulator workload |
+| Motherboard | GIGABYTE B850 AORUS STEALTH ICE | Project STEALTH rear-connector architecture and AM5 platform integration |
+| GPU | AORUS GeForce RTX 5090 STEALTH ICE 32G | Flagship 32 GB white GPU with a hidden power-connector design |
+| Memory | G.SKILL Trident Z5 Neo RGB 32 GB (2 × 16 GB), DDR5-6000, CL28-36-36-96, 1.40 V, AMD EXPO, `F5-6000J2836G16GX2-TZ5NRW` | Low-latency memory configuration with the intended EXPO profile enabled and validated |
+| Storage | Samsung 990 PRO 2 TB NVMe SSD | Primary Windows, application, and game storage |
+| Power | Super Flower LEADEX VIII Platinum PRO 1200W White | ATX 3.1 / PCIe 5.1 platform with native 12V-2x6 delivery and capacity for later cooling hardware |
+| Chassis | CORSAIR 9000D RGB AIRFLOW, white | Super full-tower platform for rear-connector integration, 18-fan deployment, and future custom-loop capacity |
+| Phase-1 CPU cooling | MONTECH NX400 White | Intentional temporary air-cooled baseline for rapid commissioning |
+| Operating system | Windows 11 Pro | Fresh client deployment and platform baseline |
 
-A 2 TB Samsung 990 PRO PCIe 4.0 NVMe SSD serves as the boot and game drive. Samsung rates the 2 TB model for sequential transfers up to 7,450 MB/s read and 6,900 MB/s write; those are manufacturer capabilities, not claimed measurements from this build.
+The installed AORUS GeForce RTX 5090 STEALTH ICE 32G uses a 32 GB GDDR7 Project STEALTH design with its power connector concealed from the traditional visible position. It complements the rear-connector motherboard and compatible 9000D tray as part of one clean, serviceable visible-side architecture.
 
-### Power delivery
+## Large-format chassis and Project STEALTH integration
 
-The white Super Flower LEADEX VIII Platinum PRO 1200 W provides a fully modular ATX 3.1 / PCIe 5.1 platform with a native 12V-2x6 cable. Native delivery avoids an adapter-dependent GPU connection and the 1200 W capacity preserves headroom for a flagship graphics card, transient demand, fans, pumps, and future cooling hardware. Super Flower lists the 1200 W unit at 125 mm long with Cybenetics Platinum certification.
+The 9000D is a super full-tower, not a routine mid-tower enclosure. Its front and top mounts each accept two rows of four 120 mm fans, its rear accepts two more, and its InfiniRail system supports extensive repositioning and later radiator planning. The chassis also supports GIGABYTE Project STEALTH motherboards with reversed power connections and multiple 480 mm-class radiator positions.
 
-### Chassis, airflow, and cooling
+The B850 AORUS STEALTH ICE relocates supported motherboard connectors to the rear face of the board. Pairing that architecture with the chassis kept primary power and front-panel wiring away from the visible motherboard face, reduced visual cable crossings, and produced the clean presentation shown in the completed build. The AORUS GPU's hidden power-connector layout extended the same design principle to the flagship graphics card.
 
-The white CORSAIR 9000D was selected for presentation, reverse-connector compatibility, and extensive fan/radiator flexibility. CORSAIR documents front and top support for eight 120 mm fans and up to 480 mm radiators, plus side and rear mounting options.
+The scale of the chassis created real integration work: physical fan-array planning, controller placement, cable reach and grouping, front-panel adaptation, device enumeration, and preservation of space for the later custom loop. These were chassis-specific design considerations, not simply additional component installation.
 
-The planned front intake bank uses eight reverse-blade CORSAIR LX120-R fans so the clean side of the fan remains visible inside the case while air enters through the front. Final exhaust placement will be recorded from the installed configuration rather than inferred from the chassis maximum.
+![Three-quarter view of the completed white CORSAIR 9000D Phase-1 build](assets/phase1-finished-angle.jpeg)
 
-A white Montech NX400 air cooler supports the initial commissioning phase. It is a deliberate temporary component that lets the system be assembled and validated while the client evaluates the final cooling architecture. A future matching AIO or full CPU-and-GPU custom loop remains a client decision, not a completed feature.
+*Completed Phase-1 three-quarter view, showing the physical scale of the 9000D and the clean visible-side presentation delivered by the STEALTH architecture.*
 
-### Simulator display integration
+## 18-fan iCUE LINK topology
 
-The confirmed initial display is one Samsung Odyssey Ark 55-inch 2nd Gen: a 3840 × 2160 4K UHD, 165 Hz, 1000R curved display. The intended final layout uses three of these displays, but the triple-display configuration has not been installed or validated. Cockpit, wheel, pedals, display mounts, and other simulator peripherals also remain pending; the case study does not attribute their selection to this PC integration work.
+Phase 1 fills the 9000D's documented 18-position capacity for 120 mm fans:
 
-## Implementation and commissioning
+| Location | Population | Physical arrangement | Controller topology |
+| --- | --- | --- | --- |
+| Front | 8 × CORSAIR iCUE LINK LX120-R RGB | Two rows of four, reverse-rotor front intake | One eight-device channel on Hub 1 |
+| Top | 8 × CORSAIR iCUE LINK LX120 RGB | Two rows of four | The second eight-device channel on Hub 1 |
+| Rear | 2 × CORSAIR iCUE LINK LX120 RGB | Linked pair | Hub 2 |
 
-The project is being delivered in stages:
+Two iCUE LINK System Hubs divide the control and power topology:
 
-1. reconcile the physical components against the build record;
-2. assemble the rear-connector platform and route power without stressing the native GPU cable;
-3. establish safe initial cooling with the NX400;
-4. install Windows 11 Pro from Rufus-created media;
-5. install current platform, graphics, and peripheral drivers;
-6. enable the kit's AMD EXPO profile if appropriate and validate memory stability;
-7. validate stability, temperatures, and gaming behavior under controlled loads;
-8. integrate the PC with the client's racing-simulator environment;
-9. finalize the long-term cooling and fan configuration with the client.
+- **Hub 1** serves the two large arrays: eight front LX120-R fans on one channel and eight top LX120 fans on the other.
+- **Hub 2** serves the two rear LX120 fans and the chassis-lighting connection through the 9000D's **iCUE LINK RGB Adapter**.
 
-Third-party Windows provisioning tools may support deployment, but they are not authored as part of this project and no uninspected script behavior is presented as an optimization.
+Current System Hub firmware supports up to 12 devices per channel. Above the seven-device soft limit, the hub manages its power budget by reducing maximum lighting brightness in steps. The two eight-fan arrays therefore remained within the supported channel capacity while accepting the documented brightness behavior. That tradeoff was reviewed with the client and accepted in exchange for a much simpler controller and cable topology than adding hardware solely to preserve maximum RGB output.
 
-## Engineering decisions
+This decision reduced hub count, power/data wiring, USB-header demand, and cross-chassis cable runs while keeping each physical eight-fan bank together as one logical chain. It was a constraint-management choice made around the chassis geometry and the client's priorities.
 
-### Staged delivery reduces decision pressure
+### Physical-to-logical device mapping
 
-The temporary cooler decouples a functional system build from a significant aesthetic and cost decision. It enables early firmware, driver, and component validation while preserving the client's choice of final cooling approach.
+The iCUE setup and device-enumeration workflow required the software order to be reconciled with the actual two-row fan geometry. Each large array was mapped in a snaking physical sequence so lighting progression followed the installed fan positions instead of an arbitrary detection order. The completed mapping aligned controller enumeration, physical location, and lighting behavior across all 18 fans; the client approved the finished result.
 
-### Compatibility is a system property
+### Two distinct 9000D adapters
 
-The motherboard, chassis, power supply, graphics tier, cooling hardware, fans, storage, and simulator connections were evaluated as an interacting system. The 9000D's reverse-connector support and the PSU's native 12V-2x6 connection directly reinforce the visual and electrical requirements.
+The case required two separate adapter integrations:
 
-### Theoretical capacity is not the installed design
+1. The **iCUE LINK RGB Adapter** connects the case-lighting system to iCUE LINK and provides software control for the front-center logo and the lighting around the USB/front-I/O area.
+2. The **Front I/O Adapter** converts the case's consolidated FPANEL connection for motherboard layouts that require individual front-panel pins. It added a separate chassis-to-motherboard integration step and was wired correctly on the first attempt.
 
-The 9000D can accommodate extreme fan and radiator configurations, but the finished portfolio record will describe the physical build. Chassis maximums are useful for design headroom; they are not evidence of installed radiators, pumps, or fans.
+Together, the two adapters cover iCUE-controlled case/front-I/O lighting and the motherboard's FPANEL connection as distinct parts of the larger chassis integration.
 
-## Validation plan
+## First-pass assembly quality
 
-Final validation will record:
+Deliberate build sequencing, connector verification, and pre-power inspection paid off when the completed system POSTed cleanly into BIOS on the first press of the power button. No power, front-I/O, connector, or component-detection correction was required.
 
-- firmware revision, driver state, and recognized component inventory;
-- memory profile, rated timings, and stability checks for the installed kit;
-- HWiNFO64 sensor data at idle and under sustained gaming/load conditions;
-- CPU and GPU temperatures, clock behavior, and power observations;
-- CPU and GPU benchmark runs used comparatively rather than as isolated marketing numbers;
-- frame-time and 4K behavior from the racing-simulator workload after it is installed;
-- initial single-display checks, followed by multi-display behavior only if the planned triple configuration is installed;
-- post-integration checks for any confirmed controls, audio, networking, and sleep/restart reliability.
+That first-pass result was especially satisfying in a system combining rear-facing motherboard connectors, a hidden GPU power connection, two LINK hubs, a chassis-specific Front I/O Adapter, separate case-lighting integration, and 18 fans. It reflected the value of methodical routing and connection checks before software commissioning began.
 
-No benchmark or thermal result is published until retained evidence is available.
+## Firmware, Windows, and platform commissioning
 
-## Current result
+Commissioning established a current, supportable baseline before performance validation:
 
-The confirmed architecture pairs a gaming-specialized AMD platform, 32 GB DDR5-6000 CL28 memory, RTX 5090-class graphics, native modern power delivery, high-performance NVMe storage, a reverse-connector white presentation, and one 55-inch Odyssey Ark 2nd Gen display. The case study will be completed after final configuration, simulator integration, and evidence capture; the planned three-display layout is not yet an operational result.
+1. The motherboard was updated from BIOS **F1** to stable **F8** using **GIGABYTE Q-Flash** before broader platform configuration. Firmware was obtained from GIGABYTE's support site and transferred by USB for the update.
+2. The installed G.SKILL kit was recognized and its AMD EXPO profile was enabled for the designed DDR5-6000 configuration. Stability was then tested rather than assumed from profile availability.
+3. Windows 11 Pro was installed from custom Rufus-created media prepared around the client's requested OOBE and local-account deployment preferences.
+4. Windows Update, GIGABYTE platform/device drivers, and the appropriate NVIDIA graphics driver were installed and reconciled. Device detection and platform state were checked after deployment.
+5. CORSAIR iCUE was configured for both hubs, the complete fan population, case lighting, and the physical device map.
 
-## Evolution
+Manufacturer-supported utilities were used selectively for firmware, platform, storage, and device configuration throughout commissioning.
 
-- Confirm the exact GPU and simulator peripherals from physical evidence.
-- Validate the installed memory profile and initial Odyssey Ark configuration during commissioning.
-- Design and validate the three-display layout only after the additional displays and mounting system are installed.
-- Record the installed fan map and airflow direction after assembly.
-- Complete thermal and stability validation before selecting final cooling.
-- Evaluate a matching AIO against the cost, maintenance, acoustic, and presentation goals of a full custom CPU/GPU loop.
-- If a custom loop is approved, design radiator and pump/reservoir placement from measured clearances rather than maximum chassis specifications.
+## Validation and commissioning evidence
 
-<!-- MEDIA TODO:
-Add a full-system hero photo after final commissioning.
-Recommended framing: three-quarter view with neutral lighting, clean background, and no client-identifying surroundings.
--->
+Validation covered the system as an integrated platform rather than relying on a single benchmark score:
 
-<!-- MEDIA TODO:
-Add a straight-on interior photo showing the rear-connector presentation and fan layout.
-Recommended framing: system powered down or safely lit; exclude serial-number labels and identifying reflections.
--->
+| Area | Method | Result |
+| --- | --- | --- |
+| Firmware and hardware detection | BIOS/Q-Flash commissioning and first-boot inventory checks | Platform recognized and commissioned successfully |
+| Memory | EXPO verification followed by MemTest86 | DDR5-6000 profile enabled; memory validation passed |
+| Storage | Samsung Magician health and diagnostic validation | 990 PRO checks passed |
+| CPU | Cinebench R23 | Single-core score of **2,050** with light background activity; accepted as consistent with expected system behavior |
+| GPU | Unigine Superposition 1.1, **4K Optimized** | Score of **46,825**; accepted as healthy for the installed RTX 5090 system |
+| Thermals | Sensor monitoring during the performed CPU/GPU workloads | Thermal behavior remained within healthy operating ranges |
+| Control topology | iCUE enumeration, lighting-order checks, and fan operation | Both hubs, all 18 fans, and case lighting operated as configured |
+| Operating system | Update, driver, device, restart, and general stability checks | Windows 11 Pro platform commissioned for handoff |
 
-<!-- MEDIA TODO:
-Add a wide photo of the PC integrated with the racing-simulator environment.
-Recommended framing: show the relationship between computer, installed display configuration, and cockpit without implying responsibility for peripheral selection or exposing client information.
--->
+Representative CPU and GPU runs complemented the broader memory, storage, thermal, driver, operating-system, and control-topology validation completed before handoff.
 
-<!-- MEDIA TODO:
-Add a sanitized thermal and benchmark evidence panel.
-Recommended framing: show tool version, test name, duration, and relevant sensors; remove usernames, device serials, and unsupported comparison claims.
--->
+## Phase-1 result
 
-<!-- MEDIA TODO:
-If implemented, add a later custom-loop update with build photos and final validation.
-Recommended framing: document actual routing, components, leak testing, and thermal evidence; do not present the concept as completed before installation.
--->
+Phase 1 delivered an operational 9800X3D/RTX 5090 client system with:
 
-## Confirmed technologies and hardware
+- the rear-connector motherboard and hidden GPU-power architecture implemented in the 9000D;
+- all 18 planned iCUE LINK fan positions populated and configured across two System Hubs;
+- case lighting and front I/O integrated through their separate 9000D adapters;
+- BIOS F8, DDR5-6000 EXPO, Windows 11 Pro, current platform drivers, and iCUE commissioned;
+- memory, storage, CPU, GPU, thermal, and general system validation completed;
+- a functioning system handed over to the client on the rapid Phase-1 schedule.
 
-- AMD Ryzen 7 9800X3D
-- GIGABYTE B850 AORUS STEALTH ICE
-- G.SKILL Trident Z5 Neo RGB 32 GB (2 × 16 GB), DDR5-6000 CL28, `F5-6000J2836G16GX2-TZ5NRW`
-- RTX 5090-class premium white graphics card
-- Samsung 990 PRO 2 TB
-- Super Flower LEADEX VIII Platinum PRO 1200 W, white
-- CORSAIR 9000D RGB AIRFLOW, white
-- CORSAIR LX / LX-R fan ecosystem
-- Montech NX400 temporary commissioning cooler, white
-- Samsung Odyssey Ark 55-inch 2nd Gen (one confirmed initially; three-display layout planned)
-- Windows 11 Pro deployment target
-- Rufus installation media
+The temporary MONTECH NX400 is part of that deliberate commissioning architecture. It created a stable, serviceable air-cooled baseline while preserving the client's custom-loop objective for the next phase.
+
+## Future evolution
+
+Only the later-stage work remains open:
+
+- design and install the custom CPU/GPU water-cooling loop;
+- complete the cable-management changes associated with reopening the system for that loop;
+- continue integration of the racing cockpit, controls, mounts, and remaining simulator hardware as the simulator build progresses;
+- expand from the initial Samsung Odyssey Ark 55-inch 2nd Gen display plan toward the intended three-display configuration;
+- validate actual multi-display frame-time, thermal, and workload behavior after installation;
+- capture final water-cooled build and complete simulator-environment photography.
+
+The simulator plan includes Samsung Odyssey Ark 55-inch 2nd Gen displays at 3840 × 2160, 165 Hz, and 1000R curvature. The complete cockpit and intended three-display configuration remain future work, followed by multi-display performance commissioning.
+
+<!-- MEDIA TODO: phase2-water-cooled-final — add a sanitized final interior photograph only after the custom CPU/GPU loop is implemented and validated. -->
+
+<!-- MEDIA TODO: simulator-final-wide — add a wide simulator-environment photograph only after the cockpit and installed display configuration are complete. -->
 
 ## Selected references
 
 - [AMD Ryzen 7 9800X3D specifications](https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html)
-- [GIGABYTE B850 AORUS STEALTH ICE specifications](https://www.gigabyte.com/us/Motherboard/B850-AORUS-STEALTH-ICE-rev-10/sp)
+- [GIGABYTE B850 AORUS STEALTH ICE](https://www.gigabyte.com/us/Motherboard/B850-AORUS-STEALTH-ICE-rev-10)
+- [GIGABYTE B850 AORUS STEALTH ICE support and BIOS history](https://www.gigabyte.com/us/Motherboard/B850-AORUS-STEALTH-ICE-rev-10/support)
+- [AORUS GeForce RTX 5090 STEALTH ICE 32G](https://www.gigabyte.com/Graphics-Card/GV-N5090AORUSST-ICE-32GD)
+- [GIGABYTE Project STEALTH RTX 5090 launch and connector architecture](https://www.gigabyte.com/us/press/news/2292)
 - [G.SKILL Trident Z5 Neo RGB DDR5 product family](https://www.gskill.com/products/7/165/390/Trident-Z5-Neo-RGB-DDR5-AMD-EXPO)
 - [Samsung 990 PRO 2 TB](https://www.samsung.com/us/memory-storage/nvme-ssd/990-pro-pcie-4-0-nvme-ssd-1tb-sku-mz-v9p2t0b-am/)
-- [Samsung Odyssey Ark 55-inch 2nd Gen specification sheet](https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/ls55cg970nnxgo/SPECSHEET_LS55CG970NNXGO_v2.pdf)
 - [Super Flower LEADEX VIII Platinum PRO](https://www.super-flower.com.tw/products-detail/LVIII-P-PRO/)
-- [CORSAIR 9000D specifications](https://www.corsair.com/us/en/p/pc-cases/cc-9011273-ww/9000d-rgb-airflow-super-full-tower-pc-case-cc-9011273-ww)
+- [CORSAIR 9000D RGB AIRFLOW — White](https://www.corsair.com/us/en/p/pc-cases/cc-9011274-ww/9000d-rgb-airflow-super-full-tower-pc-case-cc-9011274-ww)
 - [CORSAIR 9000D fan and radiator compatibility](https://www.corsair.com/us/en/explorer/diy-builder/cases/9000d-fan-and-radiator-compatibility/)
+- [CORSAIR 9000D manual and adapter integration](https://www.corsair.com/lm/en/explorer/diy-builder/cases/corsair-9000d-rgb-airflow/)
+- [CORSAIR iCUE LINK System Hub channel and brightness behavior](https://www.corsair.com/us/en/explorer/diy-builder/blogs/addressing-over-current-protection-issues-expanding-the-icue-link-system-hub-to-24-devices/)
+- [MONTECH NX400](https://www.montechpc.com/nx400)
+- [PassMark MemTest86](https://www.memtest86.com/)
+- [Samsung Magician](https://semiconductor.samsung.com/consumer-storage/magician/)
+- [Maxon Cinebench](https://www.maxon.net/en/tech-info-cinebench)
+- [UNIGINE Superposition](https://benchmark.unigine.com/superposition)
 - [Rufus bootable USB documentation](https://rufus.ie/en/)
+- [Samsung Odyssey Ark 55-inch 2nd Gen specification sheet](https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/ls55cg970nnxgo/SPECSHEET_LS55CG970NNXGO_v2.pdf)
