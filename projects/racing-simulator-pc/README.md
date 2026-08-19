@@ -2,7 +2,7 @@
 
 A flagship client PC built and commissioned for high-end 4K gaming and the first stage of a dedicated racing-simulator environment. The work combined a Ryzen 7 9800X3D and AORUS GeForce RTX 5090 STEALTH ICE 32G with a rear-connector Project STEALTH platform, a fully populated 18-fan CORSAIR iCUE LINK layout, Windows 11 Pro deployment, and systematic post-build validation.
 
-Phase 1 is complete and the system has been handed over operational. Custom water cooling, the complete simulator environment, and the planned multi-display expansion remain separate future work.
+Phase 1 is complete and the system was handed over in a fully operational state. Custom water cooling, the complete simulator environment, and the planned multi-display expansion remain separate future work.
 
 ![Completed white CORSAIR 9000D interior with the AORUS RTX 5090 and full fan installation](assets/phase1-finished-interior.jpeg)
 
@@ -135,7 +135,6 @@ Phase 1 delivered an operational 9800X3D/RTX 5090 client system with:
 - the rear-connector motherboard and hidden GPU-power architecture implemented in the 9000D;
 - all 18 planned iCUE LINK fan positions populated and configured across two System Hubs;
 - case lighting and front I/O integrated through their separate 9000D adapters;
-- first-attempt POST without connector or detection rework;
 - BIOS F8, DDR5-6000 EXPO, Windows 11 Pro, current platform drivers, and iCUE commissioned;
 - memory, storage, CPU, GPU, thermal, and general system validation completed;
 - a functioning system handed over to the client on the rapid Phase-1 schedule.
@@ -148,7 +147,7 @@ Only the later-stage work remains open:
 
 - design and install the custom CPU/GPU water-cooling loop;
 - complete the cable-management changes associated with reopening the system for that loop;
-- continue integration of the racing cockpit, controls, mounts, and other simulator hardware after those components are confirmed;
+- continue integration of the racing cockpit, controls, mounts, and remaining simulator hardware as the simulator build progresses;
 - expand from the initial Samsung Odyssey Ark 55-inch 2nd Gen display plan toward the intended three-display configuration;
 - validate actual multi-display frame-time, thermal, and workload behavior after installation;
 - capture final water-cooled build and complete simulator-environment photography.

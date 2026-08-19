@@ -48,7 +48,7 @@ Robocopy supports restartable copies, logging, and mirroring options. Destructiv
 
 ### Validate copies and test restoration
 
-A successful copy log is evidence of transfer, not proof that every file or service is recoverable. Representative copied files are opened after backup operations, the cold/off-site disk is periodically reconnected and checked, Jellyfin database/configuration backups have been restored successfully, and historical disk-image recovery has produced usable restores. These checks establish restoration as a current practice even though cadence and evidence retention can be made more formal.
+A successful copy log is evidence of transfer, not proof that every file or service is recoverable. Representative copied files are opened after backup operations, the cold/off-site disk is periodically reconnected and checked, Jellyfin database/configuration backups have been restored successfully, and historical disk-image recovery has produced usable restores. These checks are part of the current recovery practice, with an opportunity to formalize cadence and recordkeeping further.
 
 ## Practical workflow
 

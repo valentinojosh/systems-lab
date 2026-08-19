@@ -92,7 +92,7 @@ Disk Drill has been used in recovery work alongside operating-system tools and b
 - Standardize an incident worksheet for source/destination identity, health evidence, acquisition method, and validation results.
 - Add write-blocking practices where the case value and hardware justify them.
 - Define a clear escalation threshold for media with severe physical symptoms or irreplaceable data.
-- Preserve recovery logs with identifying information removed when they can support future portfolio evidence.
+- Preserve sanitized recovery logs where they improve repeatability, validation, or post-incident review.
 
 ## Technologies and tools
 

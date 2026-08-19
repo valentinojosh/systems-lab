@@ -8,7 +8,7 @@ Build a responsive, upgradeable daily system that balances high-refresh gaming w
 
 ## Platform
 
-| Component | Current public specification |
+| Component | Current configuration |
 | --- | --- |
 | Operating system | Windows 11 Pro |
 | Processor platform | 12-core AMD Ryzen 9 9900X-class |
@@ -19,8 +19,6 @@ Build a responsive, upgradeable daily system that balances high-refresh gaming w
 | Chassis | SAMA case |
 | Primary storage | 1 TB Samsung NVMe SSD |
 | Secondary storage | 1 TB WD Blue SATA drive |
-
-A physical inventory update is planned for the exact Samsung SSD and DeepCool cooler models, followed by fresh, reproducible benchmark capture.
 
 ## Workloads
 

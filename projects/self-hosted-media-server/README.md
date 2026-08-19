@@ -86,7 +86,7 @@ RAID could improve availability during a disk failure, but it would not replace 
 
 ## Validation
 
-Operational validation includes playback from household clients and the directly connected television, account-role checks, and confirmation that hardware transcoding is enabled. Storage migrations were followed by use of the preserved library on the replacement drive, and Jellyfin database/configuration backups have been restored successfully. The next evidence pass should capture a sanitized transcode session and retain a sanitized record of the established restore procedure.
+Operational validation includes playback from household clients and the directly connected television, account-role checks, and confirmation that hardware transcoding is enabled. Storage migrations were followed by use of the preserved library on the replacement drive, and Jellyfin database/configuration backups have been restored successfully.
 
 ## Results
 

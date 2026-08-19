@@ -20,7 +20,7 @@ The primary constraint is operational balance: security controls must produce a 
 
 ## Current architecture
 
-The current design separates trusted computing devices from the IoT side of the network, which also cannot reach the local Jellyfin host. A planned live configuration audit will map the Layer-2/Layer-3 mechanism behind those access boundaries.
+The current design separates trusted computing devices from the IoT side of the network, which also cannot reach the local Jellyfin host. One future live configuration review will reconcile the exact Layer-2/Layer-3 segmentation, firewall policy, and switch QoS mode behind those operational boundaries.
 
 ```mermaid
 flowchart LR
@@ -37,7 +37,7 @@ flowchart LR
     Restricted -. "access blocked" .-> Media
 ```
 
-The diagram represents current logical reachability. Detailed segmentation, addressing, and firewall mechanisms remain scheduled for the live configuration review.
+The diagram represents current logical reachability.
 
 ## Implementation
 
@@ -45,7 +45,7 @@ The diagram represents current logical reachability. Detailed segmentation, addr
 - Kept normal trusted Wi-Fi clients separate from security cameras, smart plugs, and other less-trusted devices.
 - Prevented IoT-side access to trusted computing devices and the local media service.
 - Used the GS305E to extend the single office Ethernet run to multiple wired endpoints.
-- Configured switch-side traffic priority for the gaming/development workstation when local devices contend; the planned configuration review will document the exact QoS mode and behavior.
+- Configured switch-side traffic priority for the gaming/development workstation when local devices contend.
 - Applied conservative network-wide DNS filtering while avoiding a design centered on detailed browsing-history retention.
 - Evaluated and rejected router-wide VPN routing for the current environment because its compatibility and reliability costs did not serve an operational requirement.
 
@@ -53,11 +53,11 @@ The diagram represents current logical reachability. Detailed segmentation, addr
 
 ### Segmentation is policy, not a résumé keyword
 
-Network separation is valuable when it limits unnecessary communication between devices of different trust levels. The current system enforces restricted IoT reachability; a future configuration audit will map whether the live implementation uses isolated gateway networks, explicit IEEE 802.1Q VLANs, distinct routed interfaces/subnets, or a combination.
+Network separation is valuable when it limits unnecessary communication between devices of different trust levels. The current system enforces restricted IoT reachability between the device groups that matter operationally.
 
 ### Managed distribution over the existing cable run
 
-The GS305E adds managed fan-out at the office without installing additional in-wall cabling. It supports tagged and untagged 802.1Q membership, port VLAN IDs, port-based priority, and 802.1p/DSCP QoS. A tagged uplink/access-port design remains a future option if the live configuration review shows that it would improve the current policy boundaries.
+The GS305E adds managed fan-out at the office without installing additional in-wall cabling. It supports tagged and untagged 802.1Q membership, port VLAN IDs, port-based priority, and 802.1p/DSCP QoS. A tagged uplink/access-port design remains a future option if it would improve the current policy boundaries.
 
 ### Conservative controls preserve compatibility
 
@@ -75,7 +75,7 @@ NIST guidance recommends considering a separate network for smart-home devices; 
 
 ## Validation
 
-Current validation is operational: trusted wired and wireless clients retain expected connectivity, IoT devices remain usable for their intended functions, the media service remains reachable from approved household clients, and the main workstation receives reliable wired service. A formal configuration review is planned to record the precise segmentation and QoS mechanisms and to test rules from each trust zone.
+Current validation is operational: trusted wired and wireless clients retain expected connectivity, IoT devices remain usable for their intended functions, the media service remains reachable from approved household clients, and the main workstation receives reliable wired service.
 
 ## Results
 
@@ -85,7 +85,7 @@ The network now provides managed wired office distribution and prevents less-tru
 
 High-value next steps are to:
 
-1. export a sanitized inventory of the live Flint 2 networks/interfaces and firewall zones;
+1. reconcile the live segmentation and firewall-policy implementation, then export a sanitized inventory of the Flint 2 networks/interfaces and firewall zones;
 2. verify the GS305E QoS mode and confirm that it provides the intended behavior;
 3. decide whether a dedicated Services zone improves policy clarity for Jellyfin;
 4. if justified, carry explicit 802.1Q tags across the office run and assign access ports by device role;
