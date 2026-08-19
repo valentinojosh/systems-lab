@@ -29,7 +29,7 @@ flowchart LR
 | Filesystem and volume checks | CHKDSK | Windows volume/filesystem inspection and repair when safe for the target |
 | Driver remediation | Display Driver Uninstaller (DDU) | Clean removal of graphics-driver state before controlled reinstall |
 | OS integrity | System File Checker (`sfc`) | Windows protected-system-file verification and remediation |
-| Memory checks | Windows Memory Diagnostic | Screening for memory errors; escalation to longer tests when symptoms or risk justify it |
+| Memory checks | Windows Memory Diagnostic, MemTest86 | Windows-based screening plus bootable, extended memory validation when symptoms, configuration changes, or system risk justify it |
 | Deployment media | Rufus | Creation of bootable Windows/Linux installation and recovery media from trusted images |
 | Administration | PowerShell and Windows administrative tools | Device, service, process, event, network, storage, and operating-system inspection |
 | Suspicious behavior triage | Windows Security, Malwarebytes, process/task/startup/file inspection | Layered scanning and manual correlation of unexpected persistence or execution |
@@ -87,6 +87,7 @@ CHKDSK, System File Checker, memory diagnostics, and event evidence are selected
 - [LatencyMon](https://www.resplendence.com/latencymon)
 - [Display Driver Uninstaller](https://www.wagnardsoft.com/display-driver-uninstaller-DDU-)
 - [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)
+- [PassMark MemTest86](https://www.memtest86.com/)
 - [Rufus](https://rufus.ie/en/)
 - [Microsoft CHKDSK documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk)
 - [Microsoft System File Checker guidance](https://support.microsoft.com/en-us/topic/using-system-file-checker-in-windows-365e0031-36b1-6031-f804-8fd86e0ef4ca)

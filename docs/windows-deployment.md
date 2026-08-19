@@ -83,7 +83,7 @@ This process supports:
 - new custom PC commissioning;
 - Windows reinstallation after corruption or storage replacement;
 - fresh deployment to the [Personal Performance Workstation](../projects/personal-workstation/README.md);
-- planned Windows 11 Pro deployment for the [Racing Simulator PC](../projects/racing-simulator-pc/README.md);
+- completed Phase-1 Windows 11 Pro deployment for the [Racing Simulator PC](../projects/racing-simulator-pc/README.md);
 - a potential future Windows 11 Pro upgrade for LAN-restricted Remote Desktop administration of the [Media Server](../projects/self-hosted-media-server/README.md).
 
 Microsoft documents that Windows Professional, Enterprise, Education, and Server editions can host incoming Remote Desktop connections, while Windows Home editions cannot. If the media host is upgraded, Remote Desktop should remain limited to trusted local access rather than exposed directly to the Internet.
